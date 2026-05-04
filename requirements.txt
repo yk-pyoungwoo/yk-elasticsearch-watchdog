@@ -1,0 +1,2 @@
+# viral 마케팅 추출만 XLSX 생성에 사용 (call / kakao 추출은 표준 라이브러리만 사용)
+openpyxl>=3.1.0

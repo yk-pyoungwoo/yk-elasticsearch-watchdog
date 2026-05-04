@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+from __future__ import annotations
 
 import os
 import sys
@@ -14,8 +15,16 @@ from urllib.parse import urlencode, urlparse, parse_qs, unquote
 from urllib.request import Request, urlopen
 from urllib.error import HTTPError, URLError
 
-from openpyxl import Workbook
-from openpyxl.utils import get_column_letter
+try:
+    from openpyxl import Workbook
+    from openpyxl.utils import get_column_letter
+except ModuleNotFoundError as _e:
+    print(
+        "extract-viral_marketing.py needs the 'openpyxl' package. "
+        "From the repo root run:  python3 -m pip install -r requirements.txt",
+        file=sys.stderr,
+    )
+    raise SystemExit(1) from _e
 
 ES_URL = os.environ.get("ES_URL", "http://localhost:19200").rstrip("/")
 ES_USER = os.environ.get("ES_USER", "")

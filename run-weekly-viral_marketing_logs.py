@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+from __future__ import annotations
 
 import os
 import sys
@@ -59,21 +60,23 @@ def write_log_file(path: Path) -> None:
     path.write_text("\n".join(LOG_LINES) + "\n", encoding="utf-8")
 
 
-def compute_last_saturday_friday(today: datetime | None = None) -> tuple[str, str]:
+def compute_previous_week_monday_sunday(today: datetime | None = None) -> tuple[str, str]:
     """
-    토요일 00:05 실행 기준, 방금 끝난 토~금(7일) 계산
+    직전 ISO 주의 월요일~일요일(7일). 월요일 스케줄에서 전 주 월~일 데이터를 쓸 때 사용.
+
     예:
-      - 2026-04-04(토) 00:05 실행 -> 2026-03-28 ~ 2026-04-03
-      - 2026-03-28(토) 00:05 실행 -> 2026-03-21 ~ 2026-03-27
+      - 2026-02-03(월) 실행 -> 2026-01-27(월) ~ 2026-02-02(일)
+      - 2026-02-05(수) 실행 -> 2026-01-27 ~ 2026-02-02
     """
     if today is None:
         today = datetime.now()
 
-    run_date = today.date()
-    last_friday = run_date - timedelta(days=1)
-    last_saturday = last_friday - timedelta(days=6)
+    d = today.date()
+    this_monday = d - timedelta(days=d.weekday())
+    prev_monday = this_monday - timedelta(days=7)
+    prev_sunday = prev_monday + timedelta(days=6)
 
-    return last_saturday.strftime("%Y-%m-%d"), last_friday.strftime("%Y-%m-%d")
+    return prev_monday.strftime("%Y-%m-%d"), prev_sunday.strftime("%Y-%m-%d")
 
 
 def send_slack_webhook(text: str) -> None:
@@ -315,8 +318,8 @@ def main():
         ensure_dir(LOG_DIR)
         ensure_dir(CHECKPOINT_DIR)
 
-        # 토요일 00:05 실행 기준: 방금 끝난 토~금 7일
-        start_date, end_date = compute_last_saturday_friday()
+        # 직전 주 월요일~일요일
+        start_date, end_date = compute_previous_week_monday_sunday()
 
         log("Job started")
         log(f"BASE_DIR={BASE_DIR}")

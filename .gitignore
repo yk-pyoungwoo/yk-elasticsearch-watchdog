@@ -1,0 +1,13 @@
+.env
+
+.venv/
+
+# watchdog 런타임 산출물 (README.txt·.gitkeep 은 커밋)
+watchdog/**/workspace/*
+!watchdog/**/workspace/.gitkeep
+watchdog/**/exports/*
+!watchdog/**/exports/.gitkeep
+watchdog/**/logs/*
+!watchdog/**/logs/.gitkeep
+watchdog/**/checkpoint/*
+!watchdog/**/checkpoint/.gitkeep
