@@ -127,11 +127,52 @@
 
   - ~/Library/LaunchAgents/com.elasticsearch.watchdog.weekly-monday.plist
   - 매주 월요일 09:00 (로컬 시각), StartCalendarInterval Weekday=1 (Apple: 일요일=0, 월요일=1)
-  - 제거: ./scripts/uninstall-weekly-monday-launchd.sh
+  - 제거(스크립트): ./scripts/uninstall-weekly-monday-launchd.sh
   - 지금 파이프라인만 테스트: ./run-all-weekly.sh
   - launchd 에 올린 작업을 즉시 한 번 실행:
 
       launchctl kickstart -k gui/$(id -u)/com.elasticsearch.watchdog.weekly-monday
+
+  [등록 여부 확인]
+
+  1) plist 가 있는지
+
+      ls -la ~/Library/LaunchAgents/com.elasticsearch.watchdog.weekly-monday.plist
+
+  2) launchd 가 작업을 알고 있는지 (에러 없이 상세가 나오면 로드된 상태)
+
+      launchctl print "gui/$(id -u)/com.elasticsearch.watchdog.weekly-monday"
+
+     "Could not find service" 이면 등록 안 됐거나 이미 제거된 것입니다.
+
+  3) 사용자 에이전트 목록에서 라벨 검색
+
+      launchctl list | grep elasticsearch.watchdog
+
+  4) 트리거(요일·시각) 내용만 보기
+
+      plutil -p ~/Library/LaunchAgents/com.elasticsearch.watchdog.weekly-monday.plist
+
+  5) 실제로 돌았는지 로그 (실행 후)
+
+      ls -lt logs/launchd-weekly-monday*.log logs/launchd-weekly-monday.log 2>/dev/null
+
+  [스케줄 완전 삭제]
+
+  - 권장: 저장소에서
+
+      ./scripts/uninstall-weekly-monday-launchd.sh
+
+  - 수동으로 같게 하려면:
+
+      launchctl bootout "gui/$(id -u)/com.elasticsearch.watchdog.weekly-monday"
+      rm -f ~/Library/LaunchAgents/com.elasticsearch.watchdog.weekly-monday.plist
+
+    bootout 후 plist 가 남아 있으면 재부팅 시 다시 올라올 수 있으므로 rm 까지 하는 것이 안전합니다.
+
+  [참고] 예전 매일 스케줄(daily) plist 가 남아 있으면 이름이 다릅니다.
+
+      ls ~/Library/LaunchAgents/com.elasticsearch.watchdog.*
 
   [방법 A] launchd — plist 를 직접 쓰는 경우 (맥, 재부팅 후에도 유지)
 
