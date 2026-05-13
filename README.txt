@@ -110,6 +110,30 @@
 
     python3 extract-viral_marketing.py --start-date 2026-04-01 --end-date 2026-04-30 --out-dir ... --checkpoint-dir ...
 
+  session_uuid 목록으로 기간 내 footprints만 뽑기 (input.txt, Slack·ZIP 없음):
+
+    python3 extract-sessions-footprints-by-uuid.py \
+      --input-file input.txt \
+      --start-date 2026-04-01 \
+      --end-date 2026-04-30 \
+      --out sessions_footprints_by_uuid_2026-04-01~2026-04-30.json
+
+    - input.txt: 한 줄에 session_uuid 하나. 빈 줄과 # 으로 시작하는 주석 줄은 무시.
+    - --out 을 생략하면 현재 디렉터리에 sessions_footprints_by_uuid_<시작>~<끝>.json 이 생성됨.
+    - KST 날짜 구간(--start-date / --end-date 필수)에 해당하는 인덱스·시간 범위만 조회함.
+      더 넓은 기간이 필요하면 날짜만 넓히면 됨.
+
+  call / kakao 주간 추출 JSON 및 위 by-uuid 출력에는 세션 객체 최상단에 local_uuid 가
+  session_uuid 위에 오고, footprints 항목에는 넣지 않는다. 값은 ES _source 에서 읽으며,
+  기본으로 필드명 local_uuid 와 localUuid 를 순서대로 시도한다. 다른 이름이거나
+  중첩이면 환경 변수 ES_LOCAL_UUID_SOURCE_KEYS 로 쉼표 구분 목록을 지정한다.
+  (점으로 경로 가능. 예: local_uuid,context.localUuid — context 가 _source 에 포함되도록
+  자동으로 요청 필드에 붙는다.)
+
+    export ES_LOCAL_UUID_SOURCE_KEYS="local_uuid,localUuid,context.local_uuid"
+
+  어떤 키에서도 값이 없으면 local_uuid 는 null.
+
   이 경우 OUT_DIR, ES_URL 등은 실행 전에 export 하거나 .env 를 셸에서 불러와야 합니다.
 
 

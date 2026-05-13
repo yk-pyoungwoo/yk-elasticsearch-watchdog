@@ -31,28 +31,80 @@ KST = timezone(timedelta(hours=9))
 
 TARGET_TYPE = "call"
 
-# footprints에 남길 필드
+
+def _parse_local_uuid_source_keys() -> list[str]:
+    """쉼표 구분. 점(.)으로 중첩 경로 가능. 예: local_uuid,localUuid,context.local_uuid"""
+    raw = os.environ.get("ES_LOCAL_UUID_SOURCE_KEYS", "local_uuid,localUuid")
+    return [x.strip() for x in raw.split(",") if x.strip()]
+
+
+def _extra_source_roots_for_dotted_keys(keys: list[str]) -> list[str]:
+    roots: list[str] = []
+    for k in keys:
+        if "." not in k:
+            continue
+        root = k.split(".", 1)[0]
+        if root and root not in roots:
+            roots.append(root)
+    return roots
+
+
+def _merge_source_field_list(base: list[str], extra_roots: list[str]) -> list[str]:
+    out = list(base)
+    for r in extra_roots:
+        if r not in out:
+            out.append(r)
+    return out
+
+
+LOCAL_UUID_SOURCE_KEYS = _parse_local_uuid_source_keys()
+_EXTRA_SOURCE_ROOTS_LOCAL_UUID = _extra_source_roots_for_dotted_keys(LOCAL_UUID_SOURCE_KEYS)
+
+
+def _source_value_by_path(src: dict, path: str):
+    cur: object = src
+    for part in path.split("."):
+        if not isinstance(cur, dict):
+            return None
+        cur = cur.get(part)
+    return cur
+
+
+def pick_local_uuid(src: dict):
+    for path in LOCAL_UUID_SOURCE_KEYS:
+        v = _source_value_by_path(src, path)
+        if v in (None, ""):
+            continue
+        return v if isinstance(v, str) else str(v)
+    return None
+
+
+# footprints에 남길 필드 (referrer는 이벤트별)
 FOOTPRINT_FIELDS = [
     "@timestamp",
     "url",
+    "referrer",
     "type",
     "event",
 ]
 
 # call seed / session 레벨 UTM 보강용
-CALL_SEED_SOURCE_FIELDS = [
+_CALL_SEED_SOURCE_FIELDS_BASE = [
+    "local_uuid",
     "session_uuid", "@timestamp", "url", "referrer", "utm",
     "utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content",
-    "type", "event", "device"
+    "type", "event", "device", "user_agent",
 ]
 
-SESSION_FOOTPRINT_SOURCE_FIELDS = [
+_SESSION_FOOTPRINT_SOURCE_FIELDS_BASE = [
     "@timestamp",
     "url",
     "referrer",
     "type",
     "event",
     "device",
+    "user_agent",
+    "local_uuid",
     "session_uuid",
     "utm",
     "utm_source",
@@ -61,6 +113,15 @@ SESSION_FOOTPRINT_SOURCE_FIELDS = [
     "utm_term",
     "utm_content",
 ]
+
+CALL_SEED_SOURCE_FIELDS = _merge_source_field_list(
+    _CALL_SEED_SOURCE_FIELDS_BASE,
+    _EXTRA_SOURCE_ROOTS_LOCAL_UUID,
+)
+SESSION_FOOTPRINT_SOURCE_FIELDS = _merge_source_field_list(
+    _SESSION_FOOTPRINT_SOURCE_FIELDS_BASE,
+    _EXTRA_SOURCE_ROOTS_LOCAL_UUID,
+)
 
 
 def parse_args():
@@ -262,6 +323,34 @@ def decode_url(url: str):
         return decode_value(url)
 
 
+def device_from_user_agent(user_agent):
+    """user_agent 문자열에서 mobile / tablet / desktop 추론."""
+    if user_agent in (None, ""):
+        return None
+    if not isinstance(user_agent, str):
+        user_agent = str(user_agent)
+    u = user_agent.strip().lower()
+    if not u:
+        return None
+    if "ipad" in u or "tablet" in u or "playbook" in u or "kindle" in u:
+        return "tablet"
+    if "iphone" in u or "ipod" in u:
+        return "mobile"
+    if "android" in u:
+        return "mobile" if "mobile" in u else "tablet"
+    if "windows phone" in u or "mobile" in u or "webos" in u:
+        return "mobile"
+    return "desktop"
+
+
+def resolve_device_from_source(src: dict):
+    """ES device 필드가 있으면 우선, 없으면 user_agent 파싱."""
+    d = src.get("device")
+    if d not in (None, ""):
+        return d if isinstance(d, str) else str(d)
+    return device_from_user_agent(src.get("user_agent"))
+
+
 def parse_datetime_string(value: str):
     if not isinstance(value, str):
         return None
@@ -340,6 +429,47 @@ def normalize_utm_dict(utm):
     return out
 
 
+def merged_utm_from_single_source(src: dict) -> dict:
+    """한 문서의 utm 객체·utm_* 필드·URL 쿼리 utm_* 만 합친 값(세션 병합용 후보 1건)."""
+    fp_utm = normalize_utm_dict(src.get("utm"))
+    fp_utm = merge_utm(
+        fp_utm,
+        {
+            "utm_source": decode_value(src.get("utm_source")),
+            "utm_medium": decode_value(src.get("utm_medium")),
+            "utm_campaign": decode_value(src.get("utm_campaign")),
+            "utm_term": decode_value(src.get("utm_term")),
+            "utm_content": decode_value(src.get("utm_content")),
+        },
+    )
+    fp_utm = merge_utm(fp_utm, parse_utm_from_url(src.get("url")))
+    return fp_utm
+
+
+def utm_sort_key(ts) -> datetime:
+    """@timestamp 원문 기준 정렬 (세션 UTM 후보 중 시간순 첫 건 선택)."""
+    if ts in (None, ""):
+        return datetime.max.replace(tzinfo=timezone.utc)
+    dt = parse_datetime_string(ts) if isinstance(ts, str) else None
+    if dt is None:
+        return datetime.max.replace(tzinfo=timezone.utc)
+    if dt.tzinfo is None:
+        dt = dt.replace(tzinfo=timezone.utc)
+    return dt.astimezone(timezone.utc)
+
+
+def resolve_session_utm_from_earliest_footprint_event(candidates: list) -> object:
+    """footprints에 해당하는 이벤트 중 @timestamp 가 가장 이른 문서의 UTM 만 세션 utm 으로 사용."""
+    pairs = [(ts, d) for ts, d in candidates if isinstance(d, dict)]
+    if not pairs:
+        return None
+    pairs.sort(key=lambda x: utm_sort_key(x[0]))
+    first = pairs[0][1]
+    if not first:
+        return None
+    return first
+
+
 def slim_source(src: dict):
     out = {}
     for k in FOOTPRINT_FIELDS:
@@ -364,8 +494,25 @@ def slim_source(src: dict):
     out.pop("utm_campaign", None)
     out.pop("utm_term", None)
     out.pop("utm_content", None)
+    out.pop("local_uuid", None)
+
+    if "referrer" in FOOTPRINT_FIELDS and "referrer" not in out:
+        out["referrer"] = None
 
     return out
+
+
+def build_output_entry(entry: dict) -> dict:
+    """JSON 출력 시 local_uuid가 session_uuid 앞에 오도록 순서 고정."""
+    return {
+        "local_uuid": entry.get("local_uuid"),
+        "session_uuid": entry.get("session_uuid"),
+        "utm": entry.get("utm"),
+        "referrer": entry.get("referrer"),
+        "device": entry.get("device"),
+        "footprints": entry.get("footprints"),
+        "footprints_count": entry.get("footprints_count"),
+    }
 
 
 def scroll_search(indices: str, query_body: dict):
@@ -451,21 +598,10 @@ def extract_one_day(day: str, out_dir: str):
         processed_call += 1
 
         if sid not in call_seed:
-            seed_utm = normalize_utm_dict(src.get("utm"))
-            seed_utm = merge_utm(seed_utm, {
-                "utm_source": decode_value(src.get("utm_source")),
-                "utm_medium": decode_value(src.get("utm_medium")),
-                "utm_campaign": decode_value(src.get("utm_campaign")),
-                "utm_term": decode_value(src.get("utm_term")),
-                "utm_content": decode_value(src.get("utm_content")),
-            })
-            seed_utm = merge_utm(seed_utm, parse_utm_from_url(src.get("url")))
-
             call_seed[sid] = {
+                "local_uuid": pick_local_uuid(src),
                 "session_uuid": sid,
-                "utm": seed_utm,
-                "referrer": decode_url(src.get("referrer")),
-                "device": src.get("device"),
+                "device": resolve_device_from_source(src),
                 "@timestamp": normalize_timestamp_to_kst_string(src.get("@timestamp")),
             }
 
@@ -484,11 +620,12 @@ def extract_one_day(day: str, out_dir: str):
     session_ids_list = list(call_session_ids)
 
     result = defaultdict(lambda: {
+        "local_uuid": None,
         "session_uuid": None,
         "utm": {},
         "referrer": None,
         "device": None,
-        "footprints": []
+        "footprints": [],
     })
 
     total_docs = 0
@@ -519,25 +656,24 @@ def extract_one_day(day: str, out_dir: str):
 
             seed = call_seed.get(sid)
             if seed:
-                if (not entry["referrer"]) and seed.get("referrer"):
-                    entry["referrer"] = seed.get("referrer")
-                if (not entry["device"]) and seed.get("device"):
-                    entry["device"] = seed.get("device")
-                entry["utm"] = merge_utm(entry["utm"], seed.get("utm") or {})
+                if (not entry.get("local_uuid")) and seed.get("local_uuid"):
+                    entry["local_uuid"] = seed.get("local_uuid")
+                if not entry.get("device"):
+                    if seed.get("device"):
+                        entry["device"] = seed.get("device")
+            if not entry.get("device"):
+                dv = resolve_device_from_source(src)
+                if dv:
+                    entry["device"] = dv
 
-            fp_utm = normalize_utm_dict(src.get("utm"))
-            fp_utm = merge_utm(fp_utm, {
-                "utm_source": decode_value(src.get("utm_source")),
-                "utm_medium": decode_value(src.get("utm_medium")),
-                "utm_campaign": decode_value(src.get("utm_campaign")),
-                "utm_term": decode_value(src.get("utm_term")),
-                "utm_content": decode_value(src.get("utm_content")),
-            })
-            fp_utm = merge_utm(fp_utm, parse_utm_from_url(src.get("url")))
-            entry["utm"] = merge_utm(entry["utm"], fp_utm)
+            mu = merged_utm_from_single_source(src)
+            entry.setdefault("_utm_candidates", []).append((src.get("@timestamp"), mu))
 
             slim = slim_source(src)
             entry["footprints"].append(slim)
+            lu = pick_local_uuid(src)
+            if (not entry.get("local_uuid")) and lu:
+                entry["local_uuid"] = lu
 
             total_docs += 1
             if total_docs % 200000 == 0:
@@ -547,15 +683,15 @@ def extract_one_day(day: str, out_dir: str):
 
     out = []
     for sid, entry in result.items():
+        entry["utm"] = resolve_session_utm_from_earliest_footprint_event(entry.pop("_utm_candidates", []))
+        entry["referrer"] = None
+
         if entry.get("utm") == {}:
             entry["utm"] = None
 
-        if entry.get("referrer"):
-            entry["referrer"] = decode_url(entry["referrer"])
-
         entry["footprints"].sort(key=lambda x: x.get("@timestamp") or "")
         entry["footprints_count"] = len(entry["footprints"])
-        out.append(entry)
+        out.append(build_output_entry(entry))
 
     out.sort(key=lambda x: x.get("session_uuid") or "")
 

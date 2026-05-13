@@ -1,0 +1,428 @@
+[
+  {
+    "local_uuid": "02469078-b8de-4a83-ae8a-93839aeeb899",
+    "session_uuid": "8a4481b6-76da-4909-ba52-91e103ed35be",
+    "utm": null,
+    "referrer": null,
+    "device": null,
+    "footprints": [
+      {
+        "@timestamp": "2026-05-07T23:05:40.398091911Z",
+        "url": "https://www.yklawfirm-assault.co.kr/",
+        "referrer": null
+      },
+      {
+        "@timestamp": "2026-05-07T23:15:32.520583742Z",
+        "url": "https://www.yklawfirm-assault.co.kr/",
+        "referrer": null
+      }
+    ],
+    "footprints_count": 2
+  },
+  {
+    "local_uuid": "5fd30b10-b830-43d0-8215-e0acc44a6757",
+    "session_uuid": "3c517814-cef2-4b1d-a8d6-414a18e33409",
+    "utm": null,
+    "referrer": null,
+    "device": null,
+    "footprints": [
+      {
+        "@timestamp": "2026-05-08T03:15:25.110066802Z",
+        "url": "https://www.yklawfirm-assault.co.kr/",
+       "referrer": null
+      },
+      {
+        "@timestamp": "2026-05-08T03:18:43.641246409Z",
+        "url": "https://www.yklawfirm-assault.co.kr/",
+        "referrer": null
+      },
+      {
+        "@timestamp": "2026-05-08T03:19:03.385275272Z",
+        "url": "https://www.yklawfirm-assault.co.kr/",
+        "referrer": null
+      },
+      {
+        "@timestamp": "2026-05-08T03:19:20.920651092Z",
+        "url": "https://www.yklawfirm-assault.co.kr/",
+        "referrer": null
+      },
+      {
+        "@timestamp": "2026-05-08T03:20:37.269588605Z",
+        "url": "https://www.yklawfirm-assault.co.kr/",
+        "referrer": null
+      },
+      {
+        "@timestamp": "2026-05-08T03:20:52.525900576Z",
+        "url": "https://www.yklawfirm-assault.co.kr/",
+        "referrer": null
+      },
+      {
+        "@timestamp": "2026-05-08T03:21:26.766243143Z",
+        "url": "https://www.yklawfirm-assault.co.kr/",
+        "referrer": null
+      },
+      {
+        "@timestamp": "2026-05-08T03:23:01.943804595Z",
+        "url": "https://www.yklawfirm-assault.co.kr/",
+        "referrer": null
+      },
+      {
+        "@timestamp": "2026-05-08T03:23:19.699663096Z",
+        "url": "https://www.yklawfirm-assault.co.kr/",
+        "referrer": null
+      },
+      {
+        "@timestamp": "2026-05-08T03:23:38.182082169Z",
+        "url": "https://www.yklawfirm-assault.co.kr/",
+        "referrer": null
+      },
+      {
+        "@timestamp": "2026-05-08T03:25:05.079099821Z",
+        "url": "https://www.yklawfirm-assault.co.kr/",
+        "referrer": null
+      },
+      {
+        "@timestamp": "2026-05-08T03:25:18.245375278Z",
+        "url": "https://www.yklawfirm-assault.co.kr/",
+        "referrer": null
+      },
+      {
+        "@timestamp": "2026-05-08T03:30:15.889626157Z",
+        "url": "https://www.yklawfirm-assault.co.kr/",
+        "referrer": null
+      }
+    ],
+    "footprints_count": 13
+  },
+  {
+    "local_uuid": "d0cbb6f1-394a-4bde-ab92-d9a638681a98",
+    "session_uuid": "e5ef9198-6236-4a78-a22c-c6b227deb8d0",
+    "utm": {
+      "utm_source": "mobon",
+      "utm_medium": "cpc",
+      "utm_campaign": "상속",
+      "utm_term": "260224_상속_상속분쟁_배너_B",
+      "utm_content": "banner"
+    },
+    "referrer": null,
+    "device": null,
+    "footprints": [
+      {
+        "@timestamp": "2026-05-08T07:29:40.380500620Z",
+        "url": "https://www.yklawfirm-inherit.co.kr/",
+        "referrer": null
+      },
+      {
+        "@timestamp": "2026-05-08T07:29:49.479589785Z",
+        "url": "https://www.yklawfirm-inherit.co.kr/",
+        "referrer": null
+      },
+      {
+        "@timestamp": "2026-05-08T07:31:09.006105838Z",
+        "url": "https://www.yklawfirm-inherit.co.kr/",
+        "referrer": null
+      },
+      {
+        "@timestamp": "2026-05-08T07:31:45.952116497Z",
+        "url": "https://www.yklawfirm-inherit.co.kr/?utm_source=mobon&utm_medium=cpc&utm_campaign=상속&utm_content=banner&utm_term=260224_상속_상속권확보_배너_A&moba=4c156fa0-2417-486d-81d1-f4182c004e9c_844910&mobsc=1d0e473612f24d6185347cd91a0160e1&mhhk=ZWE4ZTYwZWIwZjQ5YjdhYjc2NDkyNjdjMTk5M2NhMWJmYjgtNzBkZl8xNzc4MjI1NTA1NjEyXzAz",
+        "referrer": null
+      },
+      {
+        "@timestamp": "2026-05-08T07:31:45.990533468Z",
+        "url": "https://www.yklawfirm-inherit.co.kr/?utm_source=mobon&utm_medium=cpc&utm_campaign=상속&utm_content=banner&utm_term=260224_상속_상속권확보_배너_A&mhhk=ZWE4ZTYwZWIwZjQ5YjdhYjc2NDkyNjdjMTk5M2NhMWJmYjgtNzBkZl8xNzc4MjI1NTA1NjEyXzAz",
+        "referrer": null
+      },
+      {
+        "@timestamp": "2026-05-08T07:31:46.014155609Z",
+        "url": "https://www.yklawfirm-inherit.co.kr/?utm_source=mobon&utm_medium=cpc&utm_campaign=상속&utm_content=banner&utm_term=260224_상속_상속권확보_배너_A&mhhk=ZWE4ZTYwZWIwZjQ5YjdhYjc2NDkyNjdjMTk5M2NhMWJmYjgtNzBkZl8xNzc4MjI1NTA1NjEyXzAz",
+        "referrer": null
+      },
+      {
+        "@timestamp": "2026-05-08T07:31:46.023259868Z",
+        "url": "https://www.yklawfirm-inherit.co.kr/?utm_source=mobon&utm_medium=cpc&utm_campaign=상속&utm_content=banner&utm_term=260224_상속_상속권확보_배너_A&mhhk=ZWE4ZTYwZWIwZjQ5YjdhYjc2NDkyNjdjMTk5M2NhMWJmYjgtNzBkZl8xNzc4MjI1NTA1NjEyXzAz",
+        "referrer": null
+      },
+      {
+        "@timestamp": "2026-05-08T07:31:46.172043203Z",
+        "url": "https://www.yklawfirm-inherit.co.kr/?utm_source=mobon&utm_medium=cpc&utm_campaign=상속&utm_content=banner&utm_term=260224_상속_상속권확보_배너_A&mhhk=ZWE4ZTYwZWIwZjQ5YjdhYjc2NDkyNjdjMTk5M2NhMWJmYjgtNzBkZl8xNzc4MjI1NTA1NjEyXzAz",
+        "referrer": null
+      },
+      {
+        "@timestamp": "2026-05-08T07:31:46.207258304Z",
+        "url": "https://www.yklawfirm-inherit.co.kr/?utm_source=mobon&utm_medium=cpc&utm_campaign=상속&utm_content=banner&utm_term=260224_상속_상속권확보_배너_A&mhhk=ZWE4ZTYwZWIwZjQ5YjdhYjc2NDkyNjdjMTk5M2NhMWJmYjgtNzBkZl8xNzc4MjI1NTA1NjEyXzAz",
+        "referrer": null
+      },
+      {
+        "@timestamp": "2026-05-08T07:31:46.538489536Z",
+        "url": "https://www.yklawfirm-inherit.co.kr/?utm_source=mobon&utm_medium=cpc&utm_campaign=상속&utm_content=banner&utm_term=260224_상속_상속권확보_배너_A",
+        "referrer": null
+      },
+      {
+        "@timestamp": "2026-05-08T07:31:46.538494325Z",
+        "url": "https://www.yklawfirm-inherit.co.kr/?utm_source=mobon&utm_medium=cpc&utm_campaign=상속&utm_content=banner&utm_term=260224_상속_상속권확보_배너_A",
+        "referrer": null
+      },
+      {
+        "@timestamp": "2026-05-08T07:32:15.824567883Z",
+        "url": "https://www.yklawfirm-inherit.co.kr/",
+        "referrer": null
+      },
+      {
+        "@timestamp": "2026-05-08T07:33:22.231294635Z",
+        "url": "https://www.yklawfirm-inherit.co.kr/",
+        "referrer": null
+      },
+      {
+        "@timestamp": "2026-05-08T07:33:30.566559468Z",
+        "url": "https://www.yklawfirm-inherit.co.kr/?utm_source=mobon&utm_medium=cpc&utm_campaign=상속&utm_content=banner&utm_term=260224_상속_상속분쟁_배너_B&moba=85259632-f2e9-4743-9565-68d6c090b964_844910&mobsc=1d0e473612f24d6185347cd91a0160e1&mhhk=ZWE4ZTYwZWIwZjQ5YjdhYjc2NDkyNjdjMTk5M2NhMWJmYjgtNzBkZl8xNzc4MjI1NjEwMTQ0XzAz",
+        "referrer": null
+      },
+      {
+        "@timestamp": "2026-05-08T07:33:30.609128462Z",
+        "url": "https://www.yklawfirm-inherit.co.kr/?utm_source=mobon&utm_medium=cpc&utm_campaign=상속&utm_content=banner&utm_term=260224_상속_상속분쟁_배너_B&mhhk=ZWE4ZTYwZWIwZjQ5YjdhYjc2NDkyNjdjMTk5M2NhMWJmYjgtNzBkZl8xNzc4MjI1NjEwMTQ0XzAz",
+        "referrer": null
+      },
+      {
+        "@timestamp": "2026-05-08T07:33:30.622227184Z",
+        "url": "https://www.yklawfirm-inherit.co.kr/?utm_source=mobon&utm_medium=cpc&utm_campaign=상속&utm_content=banner&utm_term=260224_상속_상속분쟁_배너_B&mhhk=ZWE4ZTYwZWIwZjQ5YjdhYjc2NDkyNjdjMTk5M2NhMWJmYjgtNzBkZl8xNzc4MjI1NjEwMTQ0XzAz",
+        "referrer": null
+      },
+      {
+        "@timestamp": "2026-05-08T07:33:30.634177462Z",
+        "url": "https://www.yklawfirm-inherit.co.kr/?utm_source=mobon&utm_medium=cpc&utm_campaign=상속&utm_content=banner&utm_term=260224_상속_상속분쟁_배너_B&mhhk=ZWE4ZTYwZWIwZjQ5YjdhYjc2NDkyNjdjMTk5M2NhMWJmYjgtNzBkZl8xNzc4MjI1NjEwMTQ0XzAz",
+        "referrer": null
+      },
+      {
+        "@timestamp": "2026-05-08T07:33:30.721356790Z",
+        "url": "https://www.yklawfirm-inherit.co.kr/?utm_source=mobon&utm_medium=cpc&utm_campaign=상속&utm_content=banner&utm_term=260224_상속_상속분쟁_배너_B",
+        "referrer": null
+      },
+      {
+        "@timestamp": "2026-05-08T07:33:30.769184526Z",
+        "url": "https://www.yklawfirm-inherit.co.kr/?utm_source=mobon&utm_medium=cpc&utm_campaign=상속&utm_content=banner&utm_term=260224_상속_상속분쟁_배너_B",
+        "referrer": null
+      },
+      {
+        "@timestamp": "2026-05-08T07:33:30.770251025Z",
+        "url": "https://www.yklawfirm-inherit.co.kr/?utm_source=mobon&utm_medium=cpc&utm_campaign=상속&utm_content=banner&utm_term=260224_상속_상속분쟁_배너_B",
+        "referrer": null
+      },
+      {
+        "@timestamp": "2026-05-08T07:33:30.771926784Z",
+        "url": "https://www.yklawfirm-inherit.co.kr/?utm_source=mobon&utm_medium=cpc&utm_campaign=상속&utm_content=banner&utm_term=260224_상속_상속분쟁_배너_B",
+        "referrer": null
+      },
+      {
+        "@timestamp": "2026-05-08T07:33:41.528930191Z",
+        "url": "https://www.yklawfirm-inherit.co.kr/",
+        "referrer": null
+      },
+      {
+        "@timestamp": "2026-05-08T07:35:03.176518551Z",
+        "url": "https://www.yklawfirm-inherit.co.kr/",
+        "referrer": null
+      },
+      {
+        "@timestamp": "2026-05-08T07:35:08.441432786Z",
+        "url": "https://www.yklawfirm-inherit.co.kr/",
+        "referrer": null
+      }
+    ],
+    "footprints_count": 24
+  },
+  {
+    "local_uuid": "6b7b7397-48b7-44e8-a21f-2a1ca0648cc6",
+    "session_uuid": "5728f59f-0383-4a70-99b1-527d84855fe4",
+    "utm": null,
+    "referrer": null,
+    "device": null,
+    "footprints": [
+      {
+        "@timestamp": "2026-05-08T03:40:58.543503581Z",
+        "url": "https://www.yklawfirm-divorce.co.kr/",
+        "referrer": null
+      },
+      {
+        "@timestamp": "2026-05-08T03:50:55.667375922Z",
+        "url": "https://www.yklawfirm-divorce.co.kr/",
+        "referrer": null
+      }
+    ],
+    "footprints_count": 2
+  },
+  {
+    "local_uuid": "5ce85720-f83e-4b02-b5d6-abd1d4ac87dd",
+    "session_uuid": "b24d63fe-83a3-49f7-8c37-15a4fa25a973",
+    "utm": {
+      "utm_source": "mobon",
+      "utm_medium": "cpc",
+      "utm_campaign": "성범죄",
+      "utm_term": "260413_성범죄_경찰조사_동영상_YK_A_1",
+      "utm_content": "video"
+    },
+    "referrer": null,
+    "device": null,
+    "footprints": [
+      {
+        "@timestamp": "2026-05-07T23:08:59.864865166Z",
+        "url": "https://www.yklawfirm-assault.co.kr/",
+        "referrer": null
+      },
+      {
+        "@timestamp": "2026-05-07T23:10:39.646211761Z",
+        "url": "https://www.yklawfirm-assault.co.kr/?utm_source=mobon&utm_medium=cpc&utm_campaign=성범죄&utm_content=video&utm_term=260413_성범죄_경찰조사_동영상_YK_A_1&moba=60b80fb8-534e-43fe-a8dd-b44fe7941046_936614&mobsc=98136cf065a14bf5ade0f07d1961e2e7&mhhk=ZjUyODA2NmZjZGU1Y2RiYy0xMmMyNjA4YzE5NTA1MmM2YjQxLWUwM18xNzc4MTk1NDM5MDc4XzEx",
+        "referrer": null
+      },
+      {
+        "@timestamp": "2026-05-07T23:10:39.717595366Z",
+        "url": "https://www.yklawfirm-assault.co.kr/?utm_source=mobon&utm_medium=cpc&utm_campaign=성범죄&utm_content=video&utm_term=260413_성범죄_경찰조사_동영상_YK_A_1&mhhk=ZjUyODA2NmZjZGU1Y2RiYy0xMmMyNjA4YzE5NTA1MmM2YjQxLWUwM18xNzc4MTk1NDM5MDc4XzEx",
+        "referrer": null
+      },
+      {
+        "@timestamp": "2026-05-07T23:10:39.736525541Z",
+        "url": "https://www.yklawfirm-assault.co.kr/?utm_source=mobon&utm_medium=cpc&utm_campaign=성범죄&utm_content=video&utm_term=260413_성범죄_경찰조사_동영상_YK_A_1&mhhk=ZjUyODA2NmZjZGU1Y2RiYy0xMmMyNjA4YzE5NTA1MmM2YjQxLWUwM18xNzc4MTk1NDM5MDc4XzEx",
+        "referrer": null
+      },
+      {
+        "@timestamp": "2026-05-07T23:10:39.737125293Z",
+        "url": "https://www.yklawfirm-assault.co.kr/?utm_source=mobon&utm_medium=cpc&utm_campaign=성범죄&utm_content=video&utm_term=260413_성범죄_경찰조사_동영상_YK_A_1&mhhk=ZjUyODA2NmZjZGU1Y2RiYy0xMmMyNjA4YzE5NTA1MmM2YjQxLWUwM18xNzc4MTk1NDM5MDc4XzEx",
+        "referrer": null
+      },
+      {
+        "@timestamp": "2026-05-07T23:10:39.823146690Z",
+        "url": "https://www.yklawfirm-assault.co.kr/?utm_source=mobon&utm_medium=cpc&utm_campaign=성범죄&utm_content=video&utm_term=260413_성범죄_경찰조사_동영상_YK_A_1",
+        "referrer": null
+      },
+      {
+        "@timestamp": "2026-05-07T23:10:39.824302371Z",
+        "url": "https://www.yklawfirm-assault.co.kr/?utm_source=mobon&utm_medium=cpc&utm_campaign=성범죄&utm_content=video&utm_term=260413_성범죄_경찰조사_동영상_YK_A_1",
+        "referrer": null
+      },
+      {
+        "@timestamp": "2026-05-07T23:10:39.835630557Z",
+        "url": "https://www.yklawfirm-assault.co.kr/?utm_source=mobon&utm_medium=cpc&utm_campaign=성범죄&utm_content=video&utm_term=260413_성범죄_경찰조사_동영상_YK_A_1",
+        "referrer": null
+      }
+    ],
+    "footprints_count": 8
+  },
+  {
+    "local_uuid": "36745514-874c-40f0-baf8-d4a32d8bd9b4",
+    "session_uuid": "24553570-9c1d-4855-ab06-eb04927477fb",
+    "utm": null,
+    "referrer": null,
+    "device": null,
+    "footprints": [
+      {
+        "@timestamp": "2026-05-08T02:00:51.345111541Z",
+        "url": "https://www.yklawfirm-civil.co.kr/",
+        "referrer": null
+      },
+      {
+        "@timestamp": "2026-05-08T02:17:34.167654626Z",
+        "url": "https://www.yklawfirm-civil.co.kr/about",
+        "referrer": "https://www.yklawfirm-civil.co.kr/"
+      }
+    ],
+    "footprints_count": 2
+  },
+  {
+    "local_uuid": "0dd34bdf-75f3-4427-b4a6-fb50be26a123",
+    "session_uuid": "d95f8fe2-f380-469c-a63f-34a408434004",
+    "utm": null,
+    "referrer": null,
+    "device": null,
+    "footprints": [
+      {
+        "@timestamp": "2026-05-08T04:11:48.919359736Z",
+        "url": "https://www.yklawfirm-divorce.co.kr/",
+        "referrer": null
+      },
+      {
+        "@timestamp": "2026-05-08T04:12:50.771140700Z",
+        "url": "https://www.yklawfirm-divorce.co.kr/",
+        "referrer": null
+      }
+    ],
+    "footprints_count": 2
+  },
+  {
+    "local_uuid": "ea7330c7-0cf1-4e2c-9e4e-5bada5ddc3a6",
+    "session_uuid": "67a5d76c-040f-43a6-b9d2-f05e48112044",
+    "utm": null,
+    "referrer": null,
+    "device": null,
+    "footprints": [
+      {
+        "@timestamp": "2026-05-08T06:05:16.971472287Z",
+        "url": "https://www.yklawfirm-divorce.co.kr/",
+        "referrer": null
+      },
+      {
+        "@timestamp": "2026-05-08T06:31:07.525081771Z",
+        "url": "https://www.yklawfirm-divorce.co.kr/",
+        "referrer": null
+      }
+    ],
+    "footprints_count": 2
+  },
+  {
+    "local_uuid": "61df3f34-ffeb-4175-9e72-597f7968c0a3",
+    "session_uuid": "f476033c-6c48-4088-aaec-96f29adfec41",
+    "utm": null,
+    "referrer": null,
+    "device": null,
+    "footprints": [
+      {
+        "@timestamp": "2026-05-08T09:19:02.748210516Z",
+        "url": "https://www.yklawfirm.co.kr/crime/views/cs/reserve",
+        "referrer": null
+      },
+      {
+        "@timestamp": "2026-05-08T09:19:06.708321747Z",
+        "url": "https://www.yklawfirm.co.kr/",
+        "referrer": "https://www.yklawfirm.co.kr/"
+      },
+      {
+        "@timestamp": "2026-05-08T09:21:40.925019290Z",
+        "url": "https://www.yklawfirm.co.kr/counsel/reserve",
+        "referrer": "https://www.yklawfirm.co.kr/"
+      },
+      {
+        "@timestamp": "2026-05-08T09:23:59.153386442Z",
+        "url": "https://www.yklawfirm.co.kr/counsel/reserve",
+        "referrer": "https://www.yklawfirm.co.kr/",
+        "type": "counsel",
+        "event": "click"
+      },
+      {
+        "@timestamp": "2026-05-08T09:23:59.748336893Z",
+        "url": "https://www.yklawfirm.co.kr/counsel/reserve/complete",
+        "referrer": "https://www.yklawfirm.co.kr/counsel/reserve"
+      }
+    ],
+    "footprints_count": 5
+  },
+  {
+    "local_uuid": "28d1b108-31f2-4f4f-a247-d1c69909e368",
+    "session_uuid": "0f1e0f55-c645-4d24-9297-0613827121e6",
+    "utm": null,
+    "referrer": null,
+    "device": null,
+    "footprints": [
+      {
+        "@timestamp": "2026-05-08T01:20:38.529273005Z",
+        "url": "https://www.yklawfirm.co.kr/",
+        "referrer": null
+      },
+      {
+        "@timestamp": "2026-05-08T01:23:03.135455033Z",
+        "url": "https://www.yklawfirm.co.kr/",
+        "type": "kakao",
+        "event": "click",
+        "referrer": null
+      }
+    ],
+    "footprints_count": 2
+  }
+]
