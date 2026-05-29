@@ -1,0 +1,518 @@
+{
+  "generated_at": "2026-05-29 15:47:44",
+  "es_url": "http://localhost:19200",
+  "year": 2026,
+  "months": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "month_labels": [
+    "2026-01",
+    "2026-02",
+    "2026-03",
+    "2026-04",
+    "2026-05"
+  ],
+  "apps": [
+    "assault",
+    "brand",
+    "civil",
+    "crime",
+    "divorce",
+    "drug",
+    "estate",
+    "inherit",
+    "school",
+    "traffic"
+  ],
+  "row_count": 50,
+  "missing_pattern_count": 6,
+  "monthly_totals": [
+    {
+      "month_label": "2026-01",
+      "year": 2026,
+      "month": 1,
+      "total": 19888219
+    },
+    {
+      "month_label": "2026-02",
+      "year": 2026,
+      "month": 2,
+      "total": 8343920
+    },
+    {
+      "month_label": "2026-03",
+      "year": 2026,
+      "month": 3,
+      "total": 10212998
+    },
+    {
+      "month_label": "2026-04",
+      "year": 2026,
+      "month": 4,
+      "total": 56699524
+    },
+    {
+      "month_label": "2026-05",
+      "year": 2026,
+      "month": 5,
+      "total": 14962854
+    }
+  ],
+  "grand_total": 110107515,
+  "rows": [
+    {
+      "app": "assault",
+      "year": 2026,
+      "month": 1,
+      "month_label": "2026-01",
+      "index_pattern": "assault-2026-01-*",
+      "doc_count": 0,
+      "exists": false
+    },
+    {
+      "app": "brand",
+      "year": 2026,
+      "month": 1,
+      "month_label": "2026-01",
+      "index_pattern": "brand-2026-01-*",
+      "doc_count": 13252145,
+      "exists": true
+    },
+    {
+      "app": "civil",
+      "year": 2026,
+      "month": 1,
+      "month_label": "2026-01",
+      "index_pattern": "civil-2026-01-*",
+      "doc_count": 34848,
+      "exists": true
+    },
+    {
+      "app": "crime",
+      "year": 2026,
+      "month": 1,
+      "month_label": "2026-01",
+      "index_pattern": "crime-2026-01-*",
+      "doc_count": 5676413,
+      "exists": true
+    },
+    {
+      "app": "divorce",
+      "year": 2026,
+      "month": 1,
+      "month_label": "2026-01",
+      "index_pattern": "divorce-2026-01-*",
+      "doc_count": 924791,
+      "exists": true
+    },
+    {
+      "app": "drug",
+      "year": 2026,
+      "month": 1,
+      "month_label": "2026-01",
+      "index_pattern": "drug-2026-01-*",
+      "doc_count": 0,
+      "exists": false
+    },
+    {
+      "app": "estate",
+      "year": 2026,
+      "month": 1,
+      "month_label": "2026-01",
+      "index_pattern": "estate-2026-01-*",
+      "doc_count": 17,
+      "exists": true
+    },
+    {
+      "app": "inherit",
+      "year": 2026,
+      "month": 1,
+      "month_label": "2026-01",
+      "index_pattern": "inherit-2026-01-*",
+      "doc_count": 0,
+      "exists": false
+    },
+    {
+      "app": "school",
+      "year": 2026,
+      "month": 1,
+      "month_label": "2026-01",
+      "index_pattern": "school-2026-01-*",
+      "doc_count": 5,
+      "exists": true
+    },
+    {
+      "app": "traffic",
+      "year": 2026,
+      "month": 1,
+      "month_label": "2026-01",
+      "index_pattern": "traffic-2026-01-*",
+      "doc_count": 0,
+      "exists": false
+    },
+    {
+      "app": "assault",
+      "year": 2026,
+      "month": 2,
+      "month_label": "2026-02",
+      "index_pattern": "assault-2026-02-*",
+      "doc_count": 143288,
+      "exists": true
+    },
+    {
+      "app": "brand",
+      "year": 2026,
+      "month": 2,
+      "month_label": "2026-02",
+      "index_pattern": "brand-2026-02-*",
+      "doc_count": 1178304,
+      "exists": true
+    },
+    {
+      "app": "civil",
+      "year": 2026,
+      "month": 2,
+      "month_label": "2026-02",
+      "index_pattern": "civil-2026-02-*",
+      "doc_count": 396239,
+      "exists": true
+    },
+    {
+      "app": "crime",
+      "year": 2026,
+      "month": 2,
+      "month_label": "2026-02",
+      "index_pattern": "crime-2026-02-*",
+      "doc_count": 4589001,
+      "exists": true
+    },
+    {
+      "app": "divorce",
+      "year": 2026,
+      "month": 2,
+      "month_label": "2026-02",
+      "index_pattern": "divorce-2026-02-*",
+      "doc_count": 1900721,
+      "exists": true
+    },
+    {
+      "app": "drug",
+      "year": 2026,
+      "month": 2,
+      "month_label": "2026-02",
+      "index_pattern": "drug-2026-02-*",
+      "doc_count": 0,
+      "exists": false
+    },
+    {
+      "app": "estate",
+      "year": 2026,
+      "month": 2,
+      "month_label": "2026-02",
+      "index_pattern": "estate-2026-02-*",
+      "doc_count": 109,
+      "exists": true
+    },
+    {
+      "app": "inherit",
+      "year": 2026,
+      "month": 2,
+      "month_label": "2026-02",
+      "index_pattern": "inherit-2026-02-*",
+      "doc_count": 135983,
+      "exists": true
+    },
+    {
+      "app": "school",
+      "year": 2026,
+      "month": 2,
+      "month_label": "2026-02",
+      "index_pattern": "school-2026-02-*",
+      "doc_count": 275,
+      "exists": true
+    },
+    {
+      "app": "traffic",
+      "year": 2026,
+      "month": 2,
+      "month_label": "2026-02",
+      "index_pattern": "traffic-2026-02-*",
+      "doc_count": 0,
+      "exists": false
+    },
+    {
+      "app": "assault",
+      "year": 2026,
+      "month": 3,
+      "month_label": "2026-03",
+      "index_pattern": "assault-2026-03-*",
+      "doc_count": 593867,
+      "exists": true
+    },
+    {
+      "app": "brand",
+      "year": 2026,
+      "month": 3,
+      "month_label": "2026-03",
+      "index_pattern": "brand-2026-03-*",
+      "doc_count": 1582979,
+      "exists": true
+    },
+    {
+      "app": "civil",
+      "year": 2026,
+      "month": 3,
+      "month_label": "2026-03",
+      "index_pattern": "civil-2026-03-*",
+      "doc_count": 653721,
+      "exists": true
+    },
+    {
+      "app": "crime",
+      "year": 2026,
+      "month": 3,
+      "month_label": "2026-03",
+      "index_pattern": "crime-2026-03-*",
+      "doc_count": 4119102,
+      "exists": true
+    },
+    {
+      "app": "divorce",
+      "year": 2026,
+      "month": 3,
+      "month_label": "2026-03",
+      "index_pattern": "divorce-2026-03-*",
+      "doc_count": 2051531,
+      "exists": true
+    },
+    {
+      "app": "drug",
+      "year": 2026,
+      "month": 3,
+      "month_label": "2026-03",
+      "index_pattern": "drug-2026-03-*",
+      "doc_count": 9657,
+      "exists": true
+    },
+    {
+      "app": "estate",
+      "year": 2026,
+      "month": 3,
+      "month_label": "2026-03",
+      "index_pattern": "estate-2026-03-*",
+      "doc_count": 234,
+      "exists": true
+    },
+    {
+      "app": "inherit",
+      "year": 2026,
+      "month": 3,
+      "month_label": "2026-03",
+      "index_pattern": "inherit-2026-03-*",
+      "doc_count": 1176160,
+      "exists": true
+    },
+    {
+      "app": "school",
+      "year": 2026,
+      "month": 3,
+      "month_label": "2026-03",
+      "index_pattern": "school-2026-03-*",
+      "doc_count": 7982,
+      "exists": true
+    },
+    {
+      "app": "traffic",
+      "year": 2026,
+      "month": 3,
+      "month_label": "2026-03",
+      "index_pattern": "traffic-2026-03-*",
+      "doc_count": 17765,
+      "exists": true
+    },
+    {
+      "app": "assault",
+      "year": 2026,
+      "month": 4,
+      "month_label": "2026-04",
+      "index_pattern": "assault-2026-04-*",
+      "doc_count": 8079293,
+      "exists": true
+    },
+    {
+      "app": "brand",
+      "year": 2026,
+      "month": 4,
+      "month_label": "2026-04",
+      "index_pattern": "brand-2026-04-*",
+      "doc_count": 5251902,
+      "exists": true
+    },
+    {
+      "app": "civil",
+      "year": 2026,
+      "month": 4,
+      "month_label": "2026-04",
+      "index_pattern": "civil-2026-04-*",
+      "doc_count": 4444356,
+      "exists": true
+    },
+    {
+      "app": "crime",
+      "year": 2026,
+      "month": 4,
+      "month_label": "2026-04",
+      "index_pattern": "crime-2026-04-*",
+      "doc_count": 22513195,
+      "exists": true
+    },
+    {
+      "app": "divorce",
+      "year": 2026,
+      "month": 4,
+      "month_label": "2026-04",
+      "index_pattern": "divorce-2026-04-*",
+      "doc_count": 13516178,
+      "exists": true
+    },
+    {
+      "app": "drug",
+      "year": 2026,
+      "month": 4,
+      "month_label": "2026-04",
+      "index_pattern": "drug-2026-04-*",
+      "doc_count": 12600,
+      "exists": true
+    },
+    {
+      "app": "estate",
+      "year": 2026,
+      "month": 4,
+      "month_label": "2026-04",
+      "index_pattern": "estate-2026-04-*",
+      "doc_count": 302,
+      "exists": true
+    },
+    {
+      "app": "inherit",
+      "year": 2026,
+      "month": 4,
+      "month_label": "2026-04",
+      "index_pattern": "inherit-2026-04-*",
+      "doc_count": 2841308,
+      "exists": true
+    },
+    {
+      "app": "school",
+      "year": 2026,
+      "month": 4,
+      "month_label": "2026-04",
+      "index_pattern": "school-2026-04-*",
+      "doc_count": 11271,
+      "exists": true
+    },
+    {
+      "app": "traffic",
+      "year": 2026,
+      "month": 4,
+      "month_label": "2026-04",
+      "index_pattern": "traffic-2026-04-*",
+      "doc_count": 29119,
+      "exists": true
+    },
+    {
+      "app": "assault",
+      "year": 2026,
+      "month": 5,
+      "month_label": "2026-05",
+      "index_pattern": "assault-2026-05-*",
+      "doc_count": 1722140,
+      "exists": true
+    },
+    {
+      "app": "brand",
+      "year": 2026,
+      "month": 5,
+      "month_label": "2026-05",
+      "index_pattern": "brand-2026-05-*",
+      "doc_count": 2262067,
+      "exists": true
+    },
+    {
+      "app": "civil",
+      "year": 2026,
+      "month": 5,
+      "month_label": "2026-05",
+      "index_pattern": "civil-2026-05-*",
+      "doc_count": 1074671,
+      "exists": true
+    },
+    {
+      "app": "crime",
+      "year": 2026,
+      "month": 5,
+      "month_label": "2026-05",
+      "index_pattern": "crime-2026-05-*",
+      "doc_count": 5794291,
+      "exists": true
+    },
+    {
+      "app": "divorce",
+      "year": 2026,
+      "month": 5,
+      "month_label": "2026-05",
+      "index_pattern": "divorce-2026-05-*",
+      "doc_count": 2861877,
+      "exists": true
+    },
+    {
+      "app": "drug",
+      "year": 2026,
+      "month": 5,
+      "month_label": "2026-05",
+      "index_pattern": "drug-2026-05-*",
+      "doc_count": 10648,
+      "exists": true
+    },
+    {
+      "app": "estate",
+      "year": 2026,
+      "month": 5,
+      "month_label": "2026-05",
+      "index_pattern": "estate-2026-05-*",
+      "doc_count": 136,
+      "exists": true
+    },
+    {
+      "app": "inherit",
+      "year": 2026,
+      "month": 5,
+      "month_label": "2026-05",
+      "index_pattern": "inherit-2026-05-*",
+      "doc_count": 1201164,
+      "exists": true
+    },
+    {
+      "app": "school",
+      "year": 2026,
+      "month": 5,
+      "month_label": "2026-05",
+      "index_pattern": "school-2026-05-*",
+      "doc_count": 9306,
+      "exists": true
+    },
+    {
+      "app": "traffic",
+      "year": 2026,
+      "month": 5,
+      "month_label": "2026-05",
+      "index_pattern": "traffic-2026-05-*",
+      "doc_count": 26554,
+      "exists": true
+    }
+  ]
+}
