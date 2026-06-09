@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-29 15:47:44",
+  "generated_at": "2026-06-01 11:35:29",
   "es_url": "http://localhost:19200",
   "year": 2026,
   "months": [
@@ -59,10 +59,10 @@
       "month_label": "2026-05",
       "year": 2026,
       "month": 5,
-      "total": 14962854
+      "total": 15279524
     }
   ],
-  "grand_total": 110107515,
+  "grand_total": 110424185,
   "rows": [
     {
       "app": "assault",
@@ -430,7 +430,7 @@
       "month": 5,
       "month_label": "2026-05",
       "index_pattern": "assault-2026-05-*",
-      "doc_count": 1722140,
+      "doc_count": 1765396,
       "exists": true
     },
     {
@@ -439,7 +439,7 @@
       "month": 5,
       "month_label": "2026-05",
       "index_pattern": "brand-2026-05-*",
-      "doc_count": 2262067,
+      "doc_count": 2316154,
       "exists": true
     },
     {
@@ -448,7 +448,7 @@
       "month": 5,
       "month_label": "2026-05",
       "index_pattern": "civil-2026-05-*",
-      "doc_count": 1074671,
+      "doc_count": 1102686,
       "exists": true
     },
     {
@@ -457,7 +457,7 @@
       "month": 5,
       "month_label": "2026-05",
       "index_pattern": "crime-2026-05-*",
-      "doc_count": 5794291,
+      "doc_count": 5892213,
       "exists": true
     },
     {
@@ -466,7 +466,7 @@
       "month": 5,
       "month_label": "2026-05",
       "index_pattern": "divorce-2026-05-*",
-      "doc_count": 2861877,
+      "doc_count": 2922611,
       "exists": true
     },
     {
@@ -475,7 +475,7 @@
       "month": 5,
       "month_label": "2026-05",
       "index_pattern": "drug-2026-05-*",
-      "doc_count": 10648,
+      "doc_count": 11654,
       "exists": true
     },
     {
@@ -484,7 +484,7 @@
       "month": 5,
       "month_label": "2026-05",
       "index_pattern": "estate-2026-05-*",
-      "doc_count": 136,
+      "doc_count": 304,
       "exists": true
     },
     {
@@ -493,7 +493,7 @@
       "month": 5,
       "month_label": "2026-05",
       "index_pattern": "inherit-2026-05-*",
-      "doc_count": 1201164,
+      "doc_count": 1229564,
       "exists": true
     },
     {
@@ -502,7 +502,7 @@
       "month": 5,
       "month_label": "2026-05",
       "index_pattern": "school-2026-05-*",
-      "doc_count": 9306,
+      "doc_count": 10261,
       "exists": true
     },
     {
@@ -511,7 +511,7 @@
       "month": 5,
       "month_label": "2026-05",
       "index_pattern": "traffic-2026-05-*",
-      "doc_count": 26554,
+      "doc_count": 28681,
       "exists": true
     }
   ]

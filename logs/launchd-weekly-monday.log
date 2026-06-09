@@ -1,0 +1,715 @@
+[2026-06-01 09:00:04] Job started
+[2026-06-01 09:00:04] BASE_DIR=/Users/bryan/Workspace/elasticsearch/watchdog/call_sessions/workspace
+[2026-06-01 09:00:04] EXTRACT_SCRIPT=/Users/bryan/Workspace/elasticsearch/extract-call_sessions-footprints-weekly.py
+[2026-06-01 09:00:04] OUTPUT_ROOT=/Users/bryan/Workspace/elasticsearch/watchdog/call_sessions/exports
+[2026-06-01 09:00:04] LOG_DIR=/Users/bryan/Workspace/elasticsearch/watchdog/call_sessions/logs
+[2026-06-01 09:00:04] TARGET_WEEK=2026-05-25~2026-05-31
+[2026-06-01 09:00:04] HOSTNAME=Bryanui-MacBookPro.local
+[2026-06-01 09:00:05] Run extract script: /usr/bin/python3 /Users/bryan/Workspace/elasticsearch/extract-call_sessions-footprints-weekly.py --start-date 2026-05-25 --end-date 2026-05-31 --out-dir /Users/bryan/Workspace/elasticsearch/watchdog/call_sessions/exports/2026-05-25~2026-05-31
+[2026-06-01 09:00:10] [extract][stdout] [INFO] OUT_DIR=/Users/bryan/Workspace/elasticsearch/watchdog/call_sessions/exports/2026-05-25~2026-05-31
+[2026-06-01 09:00:10] [extract][stdout] [INFO] TARGET_TYPE=call
+[2026-06-01 09:00:10] [extract][stdout] [INFO] DATES=2026-05-25, 2026-05-26, 2026-05-27, 2026-05-28, 2026-05-29, 2026-05-30, 2026-05-31
+[2026-06-01 09:00:10] [extract][stdout] 
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-25] START
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-25] TARGET_TYPE=call
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-25] ES_URL=http://localhost:19200
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-25] INDICES=brand-2026-05-*,crime-2026-05-*,civil-2026-05-*,divorce-2026-05-*,assault-2026-05-*,drug-2026-05-*,inherit-2026-05-*,traffic-2026-05-*,school-2026-05-*
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-25] RANGE_KST=2026-05-25T00:00:00.000+09:00 ~ 2026-05-26T00:00:00.000+09:00
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-25] RANGE_UTC=2026-05-24T15:00:00.000+00:00 ~ 2026-05-25T15:00:00.000+00:00
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-25] BATCH_SIZE=5000, SCROLL_TTL=10m
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-25] OUT_JSON=/Users/bryan/Workspace/elasticsearch/watchdog/call_sessions/exports/2026-05-25~2026-05-31/call_sessions_footprints_2026-05-25.json
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-25] call_docs=417, unique_call_sessions=317
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-25] batch=1, processed_docs=2298, sessions=317
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-25] DONE saved -> /Users/bryan/Workspace/elasticsearch/watchdog/call_sessions/exports/2026-05-25~2026-05-31/call_sessions_footprints_2026-05-25.json
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-25] DONE call_sessions=317, footprints_docs=2298
+[2026-06-01 09:00:10] [extract][stdout] 
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-26] START
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-26] TARGET_TYPE=call
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-26] ES_URL=http://localhost:19200
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-26] INDICES=brand-2026-05-*,crime-2026-05-*,civil-2026-05-*,divorce-2026-05-*,assault-2026-05-*,drug-2026-05-*,inherit-2026-05-*,traffic-2026-05-*,school-2026-05-*
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-26] RANGE_KST=2026-05-26T00:00:00.000+09:00 ~ 2026-05-27T00:00:00.000+09:00
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-26] RANGE_UTC=2026-05-25T15:00:00.000+00:00 ~ 2026-05-26T15:00:00.000+00:00
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-26] BATCH_SIZE=5000, SCROLL_TTL=10m
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-26] OUT_JSON=/Users/bryan/Workspace/elasticsearch/watchdog/call_sessions/exports/2026-05-25~2026-05-31/call_sessions_footprints_2026-05-26.json
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-26] call_docs=2184, unique_call_sessions=1556
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-26] batch=1, processed_docs=7502, sessions=1556
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-26] DONE saved -> /Users/bryan/Workspace/elasticsearch/watchdog/call_sessions/exports/2026-05-25~2026-05-31/call_sessions_footprints_2026-05-26.json
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-26] DONE call_sessions=1556, footprints_docs=7502
+[2026-06-01 09:00:10] [extract][stdout] 
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-27] START
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-27] TARGET_TYPE=call
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-27] ES_URL=http://localhost:19200
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-27] INDICES=brand-2026-05-*,crime-2026-05-*,civil-2026-05-*,divorce-2026-05-*,assault-2026-05-*,drug-2026-05-*,inherit-2026-05-*,traffic-2026-05-*,school-2026-05-*
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-27] RANGE_KST=2026-05-27T00:00:00.000+09:00 ~ 2026-05-28T00:00:00.000+09:00
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-27] RANGE_UTC=2026-05-26T15:00:00.000+00:00 ~ 2026-05-27T15:00:00.000+00:00
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-27] BATCH_SIZE=5000, SCROLL_TTL=10m
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-27] OUT_JSON=/Users/bryan/Workspace/elasticsearch/watchdog/call_sessions/exports/2026-05-25~2026-05-31/call_sessions_footprints_2026-05-27.json
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-27] call_docs=919, unique_call_sessions=715
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-27] batch=1, processed_docs=4161, sessions=715
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-27] DONE saved -> /Users/bryan/Workspace/elasticsearch/watchdog/call_sessions/exports/2026-05-25~2026-05-31/call_sessions_footprints_2026-05-27.json
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-27] DONE call_sessions=715, footprints_docs=4161
+[2026-06-01 09:00:10] [extract][stdout] 
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-28] START
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-28] TARGET_TYPE=call
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-28] ES_URL=http://localhost:19200
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-28] INDICES=brand-2026-05-*,crime-2026-05-*,civil-2026-05-*,divorce-2026-05-*,assault-2026-05-*,drug-2026-05-*,inherit-2026-05-*,traffic-2026-05-*,school-2026-05-*
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-28] RANGE_KST=2026-05-28T00:00:00.000+09:00 ~ 2026-05-29T00:00:00.000+09:00
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-28] RANGE_UTC=2026-05-27T15:00:00.000+00:00 ~ 2026-05-28T15:00:00.000+00:00
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-28] BATCH_SIZE=5000, SCROLL_TTL=10m
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-28] OUT_JSON=/Users/bryan/Workspace/elasticsearch/watchdog/call_sessions/exports/2026-05-25~2026-05-31/call_sessions_footprints_2026-05-28.json
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-28] call_docs=1494, unique_call_sessions=1087
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-28] batch=1, processed_docs=5650, sessions=1087
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-28] DONE saved -> /Users/bryan/Workspace/elasticsearch/watchdog/call_sessions/exports/2026-05-25~2026-05-31/call_sessions_footprints_2026-05-28.json
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-28] DONE call_sessions=1087, footprints_docs=5650
+[2026-06-01 09:00:10] [extract][stdout] 
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-29] START
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-29] TARGET_TYPE=call
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-29] ES_URL=http://localhost:19200
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-29] INDICES=brand-2026-05-*,crime-2026-05-*,civil-2026-05-*,divorce-2026-05-*,assault-2026-05-*,drug-2026-05-*,inherit-2026-05-*,traffic-2026-05-*,school-2026-05-*
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-29] RANGE_KST=2026-05-29T00:00:00.000+09:00 ~ 2026-05-30T00:00:00.000+09:00
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-29] RANGE_UTC=2026-05-28T15:00:00.000+00:00 ~ 2026-05-29T15:00:00.000+00:00
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-29] BATCH_SIZE=5000, SCROLL_TTL=10m
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-29] OUT_JSON=/Users/bryan/Workspace/elasticsearch/watchdog/call_sessions/exports/2026-05-25~2026-05-31/call_sessions_footprints_2026-05-29.json
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-29] call_docs=1495, unique_call_sessions=966
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-29] batch=1, processed_docs=5095, sessions=966
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-29] DONE saved -> /Users/bryan/Workspace/elasticsearch/watchdog/call_sessions/exports/2026-05-25~2026-05-31/call_sessions_footprints_2026-05-29.json
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-29] DONE call_sessions=966, footprints_docs=5095
+[2026-06-01 09:00:10] [extract][stdout] 
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-30] START
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-30] TARGET_TYPE=call
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-30] ES_URL=http://localhost:19200
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-30] INDICES=brand-2026-05-*,crime-2026-05-*,civil-2026-05-*,divorce-2026-05-*,assault-2026-05-*,drug-2026-05-*,inherit-2026-05-*,traffic-2026-05-*,school-2026-05-*
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-30] RANGE_KST=2026-05-30T00:00:00.000+09:00 ~ 2026-05-31T00:00:00.000+09:00
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-30] RANGE_UTC=2026-05-29T15:00:00.000+00:00 ~ 2026-05-30T15:00:00.000+00:00
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-30] BATCH_SIZE=5000, SCROLL_TTL=10m
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-30] OUT_JSON=/Users/bryan/Workspace/elasticsearch/watchdog/call_sessions/exports/2026-05-25~2026-05-31/call_sessions_footprints_2026-05-30.json
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-30] call_docs=138, unique_call_sessions=114
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-30] batch=1, processed_docs=663, sessions=114
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-30] DONE saved -> /Users/bryan/Workspace/elasticsearch/watchdog/call_sessions/exports/2026-05-25~2026-05-31/call_sessions_footprints_2026-05-30.json
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-30] DONE call_sessions=114, footprints_docs=663
+[2026-06-01 09:00:10] [extract][stdout] 
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-31] START
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-31] TARGET_TYPE=call
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-31] ES_URL=http://localhost:19200
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-31] INDICES=brand-2026-05-*,crime-2026-05-*,civil-2026-05-*,divorce-2026-05-*,assault-2026-05-*,drug-2026-05-*,inherit-2026-05-*,traffic-2026-05-*,school-2026-05-*
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-31] RANGE_KST=2026-05-31T00:00:00.000+09:00 ~ 2026-06-01T00:00:00.000+09:00
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-31] RANGE_UTC=2026-05-30T15:00:00.000+00:00 ~ 2026-05-31T15:00:00.000+00:00
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-31] BATCH_SIZE=5000, SCROLL_TTL=10m
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-31] OUT_JSON=/Users/bryan/Workspace/elasticsearch/watchdog/call_sessions/exports/2026-05-25~2026-05-31/call_sessions_footprints_2026-05-31.json
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-31] call_docs=132, unique_call_sessions=116
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-31] batch=1, processed_docs=698, sessions=116
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-31] DONE saved -> /Users/bryan/Workspace/elasticsearch/watchdog/call_sessions/exports/2026-05-25~2026-05-31/call_sessions_footprints_2026-05-31.json
+[2026-06-01 09:00:10] [extract][stdout] [DAY 2026-05-31] DONE call_sessions=116, footprints_docs=698
+[2026-06-01 09:00:10] Generated JSON: /Users/bryan/Workspace/elasticsearch/watchdog/call_sessions/exports/2026-05-25~2026-05-31/call_sessions_footprints_2026-05-25.json
+[2026-06-01 09:00:10] Generated JSON: /Users/bryan/Workspace/elasticsearch/watchdog/call_sessions/exports/2026-05-25~2026-05-31/call_sessions_footprints_2026-05-26.json
+[2026-06-01 09:00:10] Generated JSON: /Users/bryan/Workspace/elasticsearch/watchdog/call_sessions/exports/2026-05-25~2026-05-31/call_sessions_footprints_2026-05-27.json
+[2026-06-01 09:00:10] Generated JSON: /Users/bryan/Workspace/elasticsearch/watchdog/call_sessions/exports/2026-05-25~2026-05-31/call_sessions_footprints_2026-05-28.json
+[2026-06-01 09:00:10] Generated JSON: /Users/bryan/Workspace/elasticsearch/watchdog/call_sessions/exports/2026-05-25~2026-05-31/call_sessions_footprints_2026-05-29.json
+[2026-06-01 09:00:10] Generated JSON: /Users/bryan/Workspace/elasticsearch/watchdog/call_sessions/exports/2026-05-25~2026-05-31/call_sessions_footprints_2026-05-30.json
+[2026-06-01 09:00:10] Generated JSON: /Users/bryan/Workspace/elasticsearch/watchdog/call_sessions/exports/2026-05-25~2026-05-31/call_sessions_footprints_2026-05-31.json
+[2026-06-01 09:00:10] ZIP created: /Users/bryan/Workspace/elasticsearch/watchdog/call_sessions/exports/call_sessions_footprints_2026-05-25~2026-05-31.zip
+[2026-06-01 09:00:10] Log saved: /Users/bryan/Workspace/elasticsearch/watchdog/call_sessions/logs/call_sessions_footprints_2026-05-25~2026-05-31.log
+[2026-06-01 09:00:14] Slack file upload completed
+[2026-06-01 09:00:14] Job finished successfully
+[2026-06-01 09:00:14] Job started
+[2026-06-01 09:00:14] JOB_NAME=kakao_sessions_footprints
+[2026-06-01 09:00:14] BASE_DIR=/Users/bryan/Workspace/elasticsearch/watchdog/kakao_sessions/workspace
+[2026-06-01 09:00:14] EXTRACT_SCRIPT=/Users/bryan/Workspace/elasticsearch/extract-kakao_sessions-footprints-weekly.py
+[2026-06-01 09:00:14] OUTPUT_ROOT=/Users/bryan/Workspace/elasticsearch/watchdog/kakao_sessions/exports
+[2026-06-01 09:00:14] LOG_DIR=/Users/bryan/Workspace/elasticsearch/watchdog/kakao_sessions/logs
+[2026-06-01 09:00:14] TARGET_WEEK=2026-05-25~2026-05-31
+[2026-06-01 09:00:14] HOSTNAME=Bryanui-MacBookPro.local
+[2026-06-01 09:00:14] sys.executable=/Library/Developer/CommandLineTools/usr/bin/python3
+[2026-06-01 09:00:14] PYTHON_BIN=/usr/bin/python3
+[2026-06-01 09:00:14] Run extract script: /usr/bin/python3 /Users/bryan/Workspace/elasticsearch/extract-kakao_sessions-footprints-weekly.py --start-date 2026-05-25 --end-date 2026-05-31 --out-dir /Users/bryan/Workspace/elasticsearch/watchdog/kakao_sessions/exports/2026-05-25~2026-05-31
+[2026-06-01 09:00:14] Extract cwd: /Users/bryan/Workspace/elasticsearch/watchdog/kakao_sessions/workspace
+[2026-06-01 09:00:14] Python executable for child: /usr/bin/python3
+[2026-06-01 09:00:17] Child stdout log saved: /Users/bryan/Workspace/elasticsearch/watchdog/kakao_sessions/logs/kakao_sessions_footprints_2026-05-25~2026-05-31_extract.stdout.log
+[2026-06-01 09:00:17] Child stderr log saved: /Users/bryan/Workspace/elasticsearch/watchdog/kakao_sessions/logs/kakao_sessions_footprints_2026-05-25~2026-05-31_extract.stderr.log
+[2026-06-01 09:00:17] Child meta log saved: /Users/bryan/Workspace/elasticsearch/watchdog/kakao_sessions/logs/kakao_sessions_footprints_2026-05-25~2026-05-31_extract.meta.log
+[2026-06-01 09:00:17] [extract][stdout] [INFO] OUT_DIR=/Users/bryan/Workspace/elasticsearch/watchdog/kakao_sessions/exports/2026-05-25~2026-05-31
+[2026-06-01 09:00:17] [extract][stdout] [INFO] DATES=2026-05-25, 2026-05-26, 2026-05-27, 2026-05-28, 2026-05-29, 2026-05-30, 2026-05-31
+[2026-06-01 09:00:17] [extract][stdout] 
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-25] START
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-25] ES_URL=http://localhost:19200
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-25] INDICES=brand-2026-05*,crime-2026-05*,civil-2026-05*,divorce-2026-05*,assault-2026-05*,drug-2026-05*,inherit-2026-05*,traffic-2026-05*,school-2026-05*
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-25] RANGE_KST=2026-05-25T00:00:00+09:00 ~ 2026-05-26T00:00:00+09:00
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-25] RANGE_UTC=2026-05-24T15:00:00.000Z ~ 2026-05-25T15:00:00.000Z
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-25] BATCH_SIZE=5000, SCROLL_TTL=10m
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-25] OUT_JSON=/Users/bryan/Workspace/elasticsearch/watchdog/kakao_sessions/exports/2026-05-25~2026-05-31/kakao_sessions_footprints_2026-05-25.json
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-25] kakao_docs=295, unique_kakao_sessions=195
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-25] batch=1, processed_docs=1215, sessions=195
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-25] DONE saved -> /Users/bryan/Workspace/elasticsearch/watchdog/kakao_sessions/exports/2026-05-25~2026-05-31/kakao_sessions_footprints_2026-05-25.json
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-25] DONE kakao_sessions=195, footprints_docs=1215
+[2026-06-01 09:00:17] [extract][stdout] 
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-26] START
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-26] ES_URL=http://localhost:19200
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-26] INDICES=brand-2026-05*,crime-2026-05*,civil-2026-05*,divorce-2026-05*,assault-2026-05*,drug-2026-05*,inherit-2026-05*,traffic-2026-05*,school-2026-05*
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-26] RANGE_KST=2026-05-26T00:00:00+09:00 ~ 2026-05-27T00:00:00+09:00
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-26] RANGE_UTC=2026-05-25T15:00:00.000Z ~ 2026-05-26T15:00:00.000Z
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-26] BATCH_SIZE=5000, SCROLL_TTL=10m
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-26] OUT_JSON=/Users/bryan/Workspace/elasticsearch/watchdog/kakao_sessions/exports/2026-05-25~2026-05-31/kakao_sessions_footprints_2026-05-26.json
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-26] kakao_docs=975, unique_kakao_sessions=810
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-26] batch=1, processed_docs=3694, sessions=810
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-26] DONE saved -> /Users/bryan/Workspace/elasticsearch/watchdog/kakao_sessions/exports/2026-05-25~2026-05-31/kakao_sessions_footprints_2026-05-26.json
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-26] DONE kakao_sessions=810, footprints_docs=3694
+[2026-06-01 09:00:17] [extract][stdout] 
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-27] START
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-27] ES_URL=http://localhost:19200
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-27] INDICES=brand-2026-05*,crime-2026-05*,civil-2026-05*,divorce-2026-05*,assault-2026-05*,drug-2026-05*,inherit-2026-05*,traffic-2026-05*,school-2026-05*
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-27] RANGE_KST=2026-05-27T00:00:00+09:00 ~ 2026-05-28T00:00:00+09:00
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-27] RANGE_UTC=2026-05-26T15:00:00.000Z ~ 2026-05-27T15:00:00.000Z
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-27] BATCH_SIZE=5000, SCROLL_TTL=10m
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-27] OUT_JSON=/Users/bryan/Workspace/elasticsearch/watchdog/kakao_sessions/exports/2026-05-25~2026-05-31/kakao_sessions_footprints_2026-05-27.json
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-27] kakao_docs=637, unique_kakao_sessions=554
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-27] batch=1, processed_docs=2474, sessions=554
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-27] DONE saved -> /Users/bryan/Workspace/elasticsearch/watchdog/kakao_sessions/exports/2026-05-25~2026-05-31/kakao_sessions_footprints_2026-05-27.json
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-27] DONE kakao_sessions=554, footprints_docs=2474
+[2026-06-01 09:00:17] [extract][stdout] 
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-28] START
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-28] ES_URL=http://localhost:19200
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-28] INDICES=brand-2026-05*,crime-2026-05*,civil-2026-05*,divorce-2026-05*,assault-2026-05*,drug-2026-05*,inherit-2026-05*,traffic-2026-05*,school-2026-05*
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-28] RANGE_KST=2026-05-28T00:00:00+09:00 ~ 2026-05-29T00:00:00+09:00
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-28] RANGE_UTC=2026-05-27T15:00:00.000Z ~ 2026-05-28T15:00:00.000Z
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-28] BATCH_SIZE=5000, SCROLL_TTL=10m
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-28] OUT_JSON=/Users/bryan/Workspace/elasticsearch/watchdog/kakao_sessions/exports/2026-05-25~2026-05-31/kakao_sessions_footprints_2026-05-28.json
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-28] kakao_docs=711, unique_kakao_sessions=609
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-28] batch=1, processed_docs=2794, sessions=609
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-28] DONE saved -> /Users/bryan/Workspace/elasticsearch/watchdog/kakao_sessions/exports/2026-05-25~2026-05-31/kakao_sessions_footprints_2026-05-28.json
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-28] DONE kakao_sessions=609, footprints_docs=2794
+[2026-06-01 09:00:17] [extract][stdout] 
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-29] START
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-29] ES_URL=http://localhost:19200
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-29] INDICES=brand-2026-05*,crime-2026-05*,civil-2026-05*,divorce-2026-05*,assault-2026-05*,drug-2026-05*,inherit-2026-05*,traffic-2026-05*,school-2026-05*
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-29] RANGE_KST=2026-05-29T00:00:00+09:00 ~ 2026-05-30T00:00:00+09:00
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-29] RANGE_UTC=2026-05-28T15:00:00.000Z ~ 2026-05-29T15:00:00.000Z
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-29] BATCH_SIZE=5000, SCROLL_TTL=10m
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-29] OUT_JSON=/Users/bryan/Workspace/elasticsearch/watchdog/kakao_sessions/exports/2026-05-25~2026-05-31/kakao_sessions_footprints_2026-05-29.json
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-29] kakao_docs=656, unique_kakao_sessions=561
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-29] batch=1, processed_docs=2426, sessions=561
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-29] DONE saved -> /Users/bryan/Workspace/elasticsearch/watchdog/kakao_sessions/exports/2026-05-25~2026-05-31/kakao_sessions_footprints_2026-05-29.json
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-29] DONE kakao_sessions=561, footprints_docs=2426
+[2026-06-01 09:00:17] [extract][stdout] 
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-30] START
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-30] ES_URL=http://localhost:19200
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-30] INDICES=brand-2026-05*,crime-2026-05*,civil-2026-05*,divorce-2026-05*,assault-2026-05*,drug-2026-05*,inherit-2026-05*,traffic-2026-05*,school-2026-05*
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-30] RANGE_KST=2026-05-30T00:00:00+09:00 ~ 2026-05-31T00:00:00+09:00
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-30] RANGE_UTC=2026-05-29T15:00:00.000Z ~ 2026-05-30T15:00:00.000Z
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-30] BATCH_SIZE=5000, SCROLL_TTL=10m
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-30] OUT_JSON=/Users/bryan/Workspace/elasticsearch/watchdog/kakao_sessions/exports/2026-05-25~2026-05-31/kakao_sessions_footprints_2026-05-30.json
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-30] kakao_docs=125, unique_kakao_sessions=118
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-30] batch=1, processed_docs=610, sessions=118
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-30] DONE saved -> /Users/bryan/Workspace/elasticsearch/watchdog/kakao_sessions/exports/2026-05-25~2026-05-31/kakao_sessions_footprints_2026-05-30.json
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-30] DONE kakao_sessions=118, footprints_docs=610
+[2026-06-01 09:00:17] [extract][stdout] 
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-31] START
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-31] ES_URL=http://localhost:19200
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-31] INDICES=brand-2026-05*,crime-2026-05*,civil-2026-05*,divorce-2026-05*,assault-2026-05*,drug-2026-05*,inherit-2026-05*,traffic-2026-05*,school-2026-05*
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-31] RANGE_KST=2026-05-31T00:00:00+09:00 ~ 2026-06-01T00:00:00+09:00
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-31] RANGE_UTC=2026-05-30T15:00:00.000Z ~ 2026-05-31T15:00:00.000Z
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-31] BATCH_SIZE=5000, SCROLL_TTL=10m
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-31] OUT_JSON=/Users/bryan/Workspace/elasticsearch/watchdog/kakao_sessions/exports/2026-05-25~2026-05-31/kakao_sessions_footprints_2026-05-31.json
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-31] kakao_docs=124, unique_kakao_sessions=117
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-31] batch=1, processed_docs=676, sessions=117
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-31] DONE saved -> /Users/bryan/Workspace/elasticsearch/watchdog/kakao_sessions/exports/2026-05-25~2026-05-31/kakao_sessions_footprints_2026-05-31.json
+[2026-06-01 09:00:17] [extract][stdout] [DAY 2026-05-31] DONE kakao_sessions=117, footprints_docs=676
+[2026-06-01 09:00:17] Generated JSON: /Users/bryan/Workspace/elasticsearch/watchdog/kakao_sessions/exports/2026-05-25~2026-05-31/kakao_sessions_footprints_2026-05-25.json
+[2026-06-01 09:00:17] Generated JSON: /Users/bryan/Workspace/elasticsearch/watchdog/kakao_sessions/exports/2026-05-25~2026-05-31/kakao_sessions_footprints_2026-05-26.json
+[2026-06-01 09:00:17] Generated JSON: /Users/bryan/Workspace/elasticsearch/watchdog/kakao_sessions/exports/2026-05-25~2026-05-31/kakao_sessions_footprints_2026-05-27.json
+[2026-06-01 09:00:17] Generated JSON: /Users/bryan/Workspace/elasticsearch/watchdog/kakao_sessions/exports/2026-05-25~2026-05-31/kakao_sessions_footprints_2026-05-28.json
+[2026-06-01 09:00:17] Generated JSON: /Users/bryan/Workspace/elasticsearch/watchdog/kakao_sessions/exports/2026-05-25~2026-05-31/kakao_sessions_footprints_2026-05-29.json
+[2026-06-01 09:00:17] Generated JSON: /Users/bryan/Workspace/elasticsearch/watchdog/kakao_sessions/exports/2026-05-25~2026-05-31/kakao_sessions_footprints_2026-05-30.json
+[2026-06-01 09:00:17] Generated JSON: /Users/bryan/Workspace/elasticsearch/watchdog/kakao_sessions/exports/2026-05-25~2026-05-31/kakao_sessions_footprints_2026-05-31.json
+[2026-06-01 09:00:17] ZIP created: /Users/bryan/Workspace/elasticsearch/watchdog/kakao_sessions/exports/kakao_sessions_footprints_2026-05-25~2026-05-31.zip
+[2026-06-01 09:00:17] Log will be saved to: /Users/bryan/Workspace/elasticsearch/watchdog/kakao_sessions/logs/kakao_sessions_footprints_2026-05-25~2026-05-31.log
+[2026-06-01 09:00:19] Slack file upload completed
+[2026-06-01 09:00:19] Job finished successfully
+[2026-06-01 09:00:19] Job started
+[2026-06-01 09:00:19] BASE_DIR=/Users/bryan/Workspace/elasticsearch/watchdog/viral/workspace
+[2026-06-01 09:00:19] EXTRACT_SCRIPT=/Users/bryan/Workspace/elasticsearch/extract-viral_marketing.py
+[2026-06-01 09:00:19] OUTPUT_ROOT=/Users/bryan/Workspace/elasticsearch/watchdog/viral/exports
+[2026-06-01 09:00:19] LOG_DIR=/Users/bryan/Workspace/elasticsearch/watchdog/viral/logs
+[2026-06-01 09:00:19] CHECKPOINT_DIR=/Users/bryan/Workspace/elasticsearch/watchdog/viral/checkpoint
+[2026-06-01 09:00:19] TARGET_WEEK=2026-05-25~2026-05-31
+[2026-06-01 09:00:19] HOSTNAME=Bryanui-MacBookPro.local
+[2026-06-01 09:00:20] Run extract script: /Users/bryan/Workspace/elasticsearch/.venv/bin/python /Users/bryan/Workspace/elasticsearch/extract-viral_marketing.py --start-date 2026-05-25 --end-date 2026-05-31 --out-dir /Users/bryan/Workspace/elasticsearch/watchdog/viral/exports --checkpoint-dir /Users/bryan/Workspace/elasticsearch/watchdog/viral/checkpoint --out-prefix viral_marketing_logs --zip-name viral_marketing_logs_2026-05-25~2026-05-31.zip
+[2026-06-01 09:00:21] [extract][stdout] [INFO] ES_URL=http://localhost:19200
+[2026-06-01 09:00:21] [extract][stdout] [INFO] BATCH_SIZE=2000, SLEEP_SEC=0.0
+[2026-06-01 09:00:21] [extract][stdout] [INFO] START_DATE(KST)=2026-05-25
+[2026-06-01 09:00:21] [extract][stdout] [INFO] END_DATE(KST)=2026-05-31
+[2026-06-01 09:00:21] [extract][stdout] [INFO] OUT_DIR=/Users/bryan/Workspace/elasticsearch/watchdog/viral/exports
+[2026-06-01 09:00:21] [extract][stdout] [INFO] CHECKPOINT_DIR=/Users/bryan/Workspace/elasticsearch/watchdog/viral/checkpoint
+[2026-06-01 09:00:21] [extract][stdout] [INFO] OUT_PREFIX=viral_marketing_logs
+[2026-06-01 09:00:21] [extract][stdout] [INFO] ZIP_PATH=/Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-05-25~2026-05-31.zip
+[2026-06-01 09:00:21] [extract][stdout] ================================================================================
+[2026-06-01 09:00:21] [extract][stdout] [INFO] KST_DAY=2026-05-25
+[2026-06-01 09:00:21] [extract][stdout] [INFO] KST_RANGE=2026-05-25T00:00:00+09:00 ~ 2026-05-26T00:00:00+09:00
+[2026-06-01 09:00:21] [extract][stdout] [INFO] UTC_RANGE=2026-05-24T15:00:00.000Z ~ 2026-05-25T15:00:00.000Z
+[2026-06-01 09:00:21] [extract][stdout] [INFO] INDEX=brand-2026-05*,crime-2026-05*,civil-2026-05*,divorce-2026-05*,assault-2026-05*,drug-2026-05*,inherit-2026-05*,traffic-2026-05*,school-2026-05*
+[2026-06-01 09:00:21] [extract][stdout] [INFO] NDJSON_FILE=/Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-05-25.ndjson
+[2026-06-01 09:00:21] [extract][stdout] [INFO] XLSX_FILE=/Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-05-25.xlsx
+[2026-06-01 09:00:21] [extract][stdout] [INFO] CHECKPOINT=/Users/bryan/Workspace/elasticsearch/watchdog/viral/checkpoint/checkpoint_2026-05-25.json
+[2026-06-01 09:00:21] [extract][stdout] [INFO] 2026-05-25 batch ok. total saved=57
+[2026-06-01 09:00:21] [extract][stdout] [DONE] 2026-05-25 no more hits
+[2026-06-01 09:00:21] [extract][stdout] [INFO] removed checkpoint: /Users/bryan/Workspace/elasticsearch/watchdog/viral/checkpoint/checkpoint_2026-05-25.json
+[2026-06-01 09:00:21] [extract][stdout] [INFO] converting NDJSON -> XLSX: /Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-05-25.ndjson -> /Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-05-25.xlsx
+[2026-06-01 09:00:21] [extract][stdout] [INFO] removed ndjson after xlsx conversion: /Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-05-25.ndjson
+[2026-06-01 09:00:21] [extract][stdout] [FINISH] 2026-05-25 saved=57, xlsx=/Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-05-25.xlsx
+[2026-06-01 09:00:21] [extract][stdout] ================================================================================
+[2026-06-01 09:00:21] [extract][stdout] [INFO] KST_DAY=2026-05-26
+[2026-06-01 09:00:21] [extract][stdout] [INFO] KST_RANGE=2026-05-26T00:00:00+09:00 ~ 2026-05-27T00:00:00+09:00
+[2026-06-01 09:00:21] [extract][stdout] [INFO] UTC_RANGE=2026-05-25T15:00:00.000Z ~ 2026-05-26T15:00:00.000Z
+[2026-06-01 09:00:21] [extract][stdout] [INFO] INDEX=brand-2026-05*,crime-2026-05*,civil-2026-05*,divorce-2026-05*,assault-2026-05*,drug-2026-05*,inherit-2026-05*,traffic-2026-05*,school-2026-05*
+[2026-06-01 09:00:21] [extract][stdout] [INFO] NDJSON_FILE=/Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-05-26.ndjson
+[2026-06-01 09:00:21] [extract][stdout] [INFO] XLSX_FILE=/Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-05-26.xlsx
+[2026-06-01 09:00:21] [extract][stdout] [INFO] CHECKPOINT=/Users/bryan/Workspace/elasticsearch/watchdog/viral/checkpoint/checkpoint_2026-05-26.json
+[2026-06-01 09:00:21] [extract][stdout] [INFO] 2026-05-26 batch ok. total saved=105
+[2026-06-01 09:00:21] [extract][stdout] [DONE] 2026-05-26 no more hits
+[2026-06-01 09:00:21] [extract][stdout] [INFO] removed checkpoint: /Users/bryan/Workspace/elasticsearch/watchdog/viral/checkpoint/checkpoint_2026-05-26.json
+[2026-06-01 09:00:21] [extract][stdout] [INFO] converting NDJSON -> XLSX: /Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-05-26.ndjson -> /Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-05-26.xlsx
+[2026-06-01 09:00:21] [extract][stdout] [INFO] removed ndjson after xlsx conversion: /Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-05-26.ndjson
+[2026-06-01 09:00:21] [extract][stdout] [FINISH] 2026-05-26 saved=105, xlsx=/Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-05-26.xlsx
+[2026-06-01 09:00:21] [extract][stdout] ================================================================================
+[2026-06-01 09:00:21] [extract][stdout] [INFO] KST_DAY=2026-05-27
+[2026-06-01 09:00:21] [extract][stdout] [INFO] KST_RANGE=2026-05-27T00:00:00+09:00 ~ 2026-05-28T00:00:00+09:00
+[2026-06-01 09:00:21] [extract][stdout] [INFO] UTC_RANGE=2026-05-26T15:00:00.000Z ~ 2026-05-27T15:00:00.000Z
+[2026-06-01 09:00:21] [extract][stdout] [INFO] INDEX=brand-2026-05*,crime-2026-05*,civil-2026-05*,divorce-2026-05*,assault-2026-05*,drug-2026-05*,inherit-2026-05*,traffic-2026-05*,school-2026-05*
+[2026-06-01 09:00:21] [extract][stdout] [INFO] NDJSON_FILE=/Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-05-27.ndjson
+[2026-06-01 09:00:21] [extract][stdout] [INFO] XLSX_FILE=/Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-05-27.xlsx
+[2026-06-01 09:00:21] [extract][stdout] [INFO] CHECKPOINT=/Users/bryan/Workspace/elasticsearch/watchdog/viral/checkpoint/checkpoint_2026-05-27.json
+[2026-06-01 09:00:21] [extract][stdout] [INFO] 2026-05-27 batch ok. total saved=198
+[2026-06-01 09:00:21] [extract][stdout] [DONE] 2026-05-27 no more hits
+[2026-06-01 09:00:21] [extract][stdout] [INFO] removed checkpoint: /Users/bryan/Workspace/elasticsearch/watchdog/viral/checkpoint/checkpoint_2026-05-27.json
+[2026-06-01 09:00:21] [extract][stdout] [INFO] converting NDJSON -> XLSX: /Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-05-27.ndjson -> /Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-05-27.xlsx
+[2026-06-01 09:00:21] [extract][stdout] [INFO] removed ndjson after xlsx conversion: /Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-05-27.ndjson
+[2026-06-01 09:00:21] [extract][stdout] [FINISH] 2026-05-27 saved=198, xlsx=/Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-05-27.xlsx
+[2026-06-01 09:00:21] [extract][stdout] ================================================================================
+[2026-06-01 09:00:21] [extract][stdout] [INFO] KST_DAY=2026-05-28
+[2026-06-01 09:00:21] [extract][stdout] [INFO] KST_RANGE=2026-05-28T00:00:00+09:00 ~ 2026-05-29T00:00:00+09:00
+[2026-06-01 09:00:21] [extract][stdout] [INFO] UTC_RANGE=2026-05-27T15:00:00.000Z ~ 2026-05-28T15:00:00.000Z
+[2026-06-01 09:00:21] [extract][stdout] [INFO] INDEX=brand-2026-05*,crime-2026-05*,civil-2026-05*,divorce-2026-05*,assault-2026-05*,drug-2026-05*,inherit-2026-05*,traffic-2026-05*,school-2026-05*
+[2026-06-01 09:00:21] [extract][stdout] [INFO] NDJSON_FILE=/Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-05-28.ndjson
+[2026-06-01 09:00:21] [extract][stdout] [INFO] XLSX_FILE=/Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-05-28.xlsx
+[2026-06-01 09:00:21] [extract][stdout] [INFO] CHECKPOINT=/Users/bryan/Workspace/elasticsearch/watchdog/viral/checkpoint/checkpoint_2026-05-28.json
+[2026-06-01 09:00:21] [extract][stdout] [INFO] 2026-05-28 batch ok. total saved=230
+[2026-06-01 09:00:21] [extract][stdout] [DONE] 2026-05-28 no more hits
+[2026-06-01 09:00:21] [extract][stdout] [INFO] removed checkpoint: /Users/bryan/Workspace/elasticsearch/watchdog/viral/checkpoint/checkpoint_2026-05-28.json
+[2026-06-01 09:00:21] [extract][stdout] [INFO] converting NDJSON -> XLSX: /Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-05-28.ndjson -> /Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-05-28.xlsx
+[2026-06-01 09:00:21] [extract][stdout] [INFO] removed ndjson after xlsx conversion: /Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-05-28.ndjson
+[2026-06-01 09:00:21] [extract][stdout] [FINISH] 2026-05-28 saved=230, xlsx=/Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-05-28.xlsx
+[2026-06-01 09:00:21] [extract][stdout] ================================================================================
+[2026-06-01 09:00:21] [extract][stdout] [INFO] KST_DAY=2026-05-29
+[2026-06-01 09:00:21] [extract][stdout] [INFO] KST_RANGE=2026-05-29T00:00:00+09:00 ~ 2026-05-30T00:00:00+09:00
+[2026-06-01 09:00:21] [extract][stdout] [INFO] UTC_RANGE=2026-05-28T15:00:00.000Z ~ 2026-05-29T15:00:00.000Z
+[2026-06-01 09:00:21] [extract][stdout] [INFO] INDEX=brand-2026-05*,crime-2026-05*,civil-2026-05*,divorce-2026-05*,assault-2026-05*,drug-2026-05*,inherit-2026-05*,traffic-2026-05*,school-2026-05*
+[2026-06-01 09:00:21] [extract][stdout] [INFO] NDJSON_FILE=/Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-05-29.ndjson
+[2026-06-01 09:00:21] [extract][stdout] [INFO] XLSX_FILE=/Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-05-29.xlsx
+[2026-06-01 09:00:21] [extract][stdout] [INFO] CHECKPOINT=/Users/bryan/Workspace/elasticsearch/watchdog/viral/checkpoint/checkpoint_2026-05-29.json
+[2026-06-01 09:00:21] [extract][stdout] [INFO] 2026-05-29 batch ok. total saved=208
+[2026-06-01 09:00:21] [extract][stdout] [DONE] 2026-05-29 no more hits
+[2026-06-01 09:00:21] [extract][stdout] [INFO] removed checkpoint: /Users/bryan/Workspace/elasticsearch/watchdog/viral/checkpoint/checkpoint_2026-05-29.json
+[2026-06-01 09:00:21] [extract][stdout] [INFO] converting NDJSON -> XLSX: /Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-05-29.ndjson -> /Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-05-29.xlsx
+[2026-06-01 09:00:21] [extract][stdout] [INFO] removed ndjson after xlsx conversion: /Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-05-29.ndjson
+[2026-06-01 09:00:21] [extract][stdout] [FINISH] 2026-05-29 saved=208, xlsx=/Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-05-29.xlsx
+[2026-06-01 09:00:21] [extract][stdout] ================================================================================
+[2026-06-01 09:00:21] [extract][stdout] [INFO] KST_DAY=2026-05-30
+[2026-06-01 09:00:21] [extract][stdout] [INFO] KST_RANGE=2026-05-30T00:00:00+09:00 ~ 2026-05-31T00:00:00+09:00
+[2026-06-01 09:00:21] [extract][stdout] [INFO] UTC_RANGE=2026-05-29T15:00:00.000Z ~ 2026-05-30T15:00:00.000Z
+[2026-06-01 09:00:21] [extract][stdout] [INFO] INDEX=brand-2026-05*,crime-2026-05*,civil-2026-05*,divorce-2026-05*,assault-2026-05*,drug-2026-05*,inherit-2026-05*,traffic-2026-05*,school-2026-05*
+[2026-06-01 09:00:21] [extract][stdout] [INFO] NDJSON_FILE=/Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-05-30.ndjson
+[2026-06-01 09:00:21] [extract][stdout] [INFO] XLSX_FILE=/Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-05-30.xlsx
+[2026-06-01 09:00:21] [extract][stdout] [INFO] CHECKPOINT=/Users/bryan/Workspace/elasticsearch/watchdog/viral/checkpoint/checkpoint_2026-05-30.json
+[2026-06-01 09:00:21] [extract][stdout] [INFO] 2026-05-30 batch ok. total saved=132
+[2026-06-01 09:00:21] [extract][stdout] [DONE] 2026-05-30 no more hits
+[2026-06-01 09:00:21] [extract][stdout] [INFO] removed checkpoint: /Users/bryan/Workspace/elasticsearch/watchdog/viral/checkpoint/checkpoint_2026-05-30.json
+[2026-06-01 09:00:21] [extract][stdout] [INFO] converting NDJSON -> XLSX: /Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-05-30.ndjson -> /Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-05-30.xlsx
+[2026-06-01 09:00:21] [extract][stdout] [INFO] removed ndjson after xlsx conversion: /Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-05-30.ndjson
+[2026-06-01 09:00:21] [extract][stdout] [FINISH] 2026-05-30 saved=132, xlsx=/Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-05-30.xlsx
+[2026-06-01 09:00:21] [extract][stdout] ================================================================================
+[2026-06-01 09:00:21] [extract][stdout] [INFO] KST_DAY=2026-05-31
+[2026-06-01 09:00:21] [extract][stdout] [INFO] KST_RANGE=2026-05-31T00:00:00+09:00 ~ 2026-06-01T00:00:00+09:00
+[2026-06-01 09:00:21] [extract][stdout] [INFO] UTC_RANGE=2026-05-30T15:00:00.000Z ~ 2026-05-31T15:00:00.000Z
+[2026-06-01 09:00:21] [extract][stdout] [INFO] INDEX=brand-2026-05*,crime-2026-05*,civil-2026-05*,divorce-2026-05*,assault-2026-05*,drug-2026-05*,inherit-2026-05*,traffic-2026-05*,school-2026-05*
+[2026-06-01 09:00:21] [extract][stdout] [INFO] NDJSON_FILE=/Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-05-31.ndjson
+[2026-06-01 09:00:21] [extract][stdout] [INFO] XLSX_FILE=/Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-05-31.xlsx
+[2026-06-01 09:00:21] [extract][stdout] [INFO] CHECKPOINT=/Users/bryan/Workspace/elasticsearch/watchdog/viral/checkpoint/checkpoint_2026-05-31.json
+[2026-06-01 09:00:21] [extract][stdout] [INFO] 2026-05-31 batch ok. total saved=129
+[2026-06-01 09:00:21] [extract][stdout] [DONE] 2026-05-31 no more hits
+[2026-06-01 09:00:21] [extract][stdout] [INFO] removed checkpoint: /Users/bryan/Workspace/elasticsearch/watchdog/viral/checkpoint/checkpoint_2026-05-31.json
+[2026-06-01 09:00:21] [extract][stdout] [INFO] converting NDJSON -> XLSX: /Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-05-31.ndjson -> /Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-05-31.xlsx
+[2026-06-01 09:00:21] [extract][stdout] [INFO] removed ndjson after xlsx conversion: /Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-05-31.ndjson
+[2026-06-01 09:00:21] [extract][stdout] [FINISH] 2026-05-31 saved=129, xlsx=/Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-05-31.xlsx
+[2026-06-01 09:00:21] [extract][stdout] [INFO] creating zip: /Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-05-25~2026-05-31.zip
+[2026-06-01 09:00:21] [extract][stdout] [INFO] zip created: /Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-05-25~2026-05-31.zip
+[2026-06-01 09:00:21] [extract][stdout] [INFO] removed xlsx after zip creation: /Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-05-25.xlsx
+[2026-06-01 09:00:21] [extract][stdout] [INFO] removed xlsx after zip creation: /Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-05-26.xlsx
+[2026-06-01 09:00:21] [extract][stdout] [INFO] removed xlsx after zip creation: /Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-05-27.xlsx
+[2026-06-01 09:00:21] [extract][stdout] [INFO] removed xlsx after zip creation: /Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-05-28.xlsx
+[2026-06-01 09:00:21] [extract][stdout] [INFO] removed xlsx after zip creation: /Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-05-29.xlsx
+[2026-06-01 09:00:21] [extract][stdout] [INFO] removed xlsx after zip creation: /Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-05-30.xlsx
+[2026-06-01 09:00:21] [extract][stdout] [INFO] removed xlsx after zip creation: /Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-05-31.xlsx
+[2026-06-01 09:00:21] [extract][stdout] [FINISH] zip created and temporary xlsx files removed: /Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-05-25~2026-05-31.zip
+[2026-06-01 09:00:21] ZIP created: /Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-05-25~2026-05-31.zip
+[2026-06-01 09:00:21] Prepare Slack upload: viral_marketing_logs_2026-05-25~2026-05-31.zip (178630 bytes)
+[2026-06-01 09:00:23] Slack file upload completed
+[2026-06-01 09:00:23] Log saved: /Users/bryan/Workspace/elasticsearch/watchdog/viral/logs/viral_marketing_logs_2026-05-25~2026-05-31.log
+[2026-06-01 09:00:23] Elapsed seconds: 4
+[2026-06-01 09:00:23] Job finished successfully
+[2026-06-08 09:00:04] Job started
+[2026-06-08 09:00:04] BASE_DIR=/Users/bryan/Workspace/elasticsearch/watchdog/call_sessions/workspace
+[2026-06-08 09:00:04] EXTRACT_SCRIPT=/Users/bryan/Workspace/elasticsearch/extract-call_sessions-footprints-weekly.py
+[2026-06-08 09:00:04] OUTPUT_ROOT=/Users/bryan/Workspace/elasticsearch/watchdog/call_sessions/exports
+[2026-06-08 09:00:04] LOG_DIR=/Users/bryan/Workspace/elasticsearch/watchdog/call_sessions/logs
+[2026-06-08 09:00:04] TARGET_WEEK=2026-06-01~2026-06-07
+[2026-06-08 09:00:04] HOSTNAME=Bryanui-MacBookPro.local
+[2026-06-08 09:00:05] Run extract script: /usr/bin/python3 /Users/bryan/Workspace/elasticsearch/extract-call_sessions-footprints-weekly.py --start-date 2026-06-01 --end-date 2026-06-07 --out-dir /Users/bryan/Workspace/elasticsearch/watchdog/call_sessions/exports/2026-06-01~2026-06-07
+[2026-06-08 09:00:11] [extract][stdout] [INFO] OUT_DIR=/Users/bryan/Workspace/elasticsearch/watchdog/call_sessions/exports/2026-06-01~2026-06-07
+[2026-06-08 09:00:11] [extract][stdout] [INFO] TARGET_TYPE=call
+[2026-06-08 09:00:11] [extract][stdout] [INFO] DATES=2026-06-01, 2026-06-02, 2026-06-03, 2026-06-04, 2026-06-05, 2026-06-06, 2026-06-07
+[2026-06-08 09:00:11] [extract][stdout] 
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-01] START
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-01] TARGET_TYPE=call
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-01] ES_URL=http://localhost:19200
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-01] INDICES=brand-2026-05-*,crime-2026-05-*,civil-2026-05-*,divorce-2026-05-*,assault-2026-05-*,drug-2026-05-*,inherit-2026-05-*,traffic-2026-05-*,school-2026-05-*,brand-2026-06-*,crime-2026-06-*,civil-2026-06-*,divorce-2026-06-*,assault-2026-06-*,drug-2026-06-*,inherit-2026-06-*,traffic-2026-06-*,school-2026-06-*
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-01] RANGE_KST=2026-06-01T00:00:00.000+09:00 ~ 2026-06-02T00:00:00.000+09:00
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-01] RANGE_UTC=2026-05-31T15:00:00.000+00:00 ~ 2026-06-01T15:00:00.000+00:00
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-01] BATCH_SIZE=5000, SCROLL_TTL=10m
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-01] OUT_JSON=/Users/bryan/Workspace/elasticsearch/watchdog/call_sessions/exports/2026-06-01~2026-06-07/call_sessions_footprints_2026-06-01.json
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-01] call_docs=1303, unique_call_sessions=947
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-01] batch=1, processed_docs=3830, sessions=947
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-01] DONE saved -> /Users/bryan/Workspace/elasticsearch/watchdog/call_sessions/exports/2026-06-01~2026-06-07/call_sessions_footprints_2026-06-01.json
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-01] DONE call_sessions=947, footprints_docs=3830
+[2026-06-08 09:00:11] [extract][stdout] 
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-02] START
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-02] TARGET_TYPE=call
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-02] ES_URL=http://localhost:19200
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-02] INDICES=brand-2026-06-*,crime-2026-06-*,civil-2026-06-*,divorce-2026-06-*,assault-2026-06-*,drug-2026-06-*,inherit-2026-06-*,traffic-2026-06-*,school-2026-06-*
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-02] RANGE_KST=2026-06-02T00:00:00.000+09:00 ~ 2026-06-03T00:00:00.000+09:00
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-02] RANGE_UTC=2026-06-01T15:00:00.000+00:00 ~ 2026-06-02T15:00:00.000+00:00
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-02] BATCH_SIZE=5000, SCROLL_TTL=10m
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-02] OUT_JSON=/Users/bryan/Workspace/elasticsearch/watchdog/call_sessions/exports/2026-06-01~2026-06-07/call_sessions_footprints_2026-06-02.json
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-02] call_docs=1952, unique_call_sessions=1273
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-02] batch=1, processed_docs=4961, sessions=1273
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-02] DONE saved -> /Users/bryan/Workspace/elasticsearch/watchdog/call_sessions/exports/2026-06-01~2026-06-07/call_sessions_footprints_2026-06-02.json
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-02] DONE call_sessions=1273, footprints_docs=4961
+[2026-06-08 09:00:11] [extract][stdout] 
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-03] START
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-03] TARGET_TYPE=call
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-03] ES_URL=http://localhost:19200
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-03] INDICES=brand-2026-06-*,crime-2026-06-*,civil-2026-06-*,divorce-2026-06-*,assault-2026-06-*,drug-2026-06-*,inherit-2026-06-*,traffic-2026-06-*,school-2026-06-*
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-03] RANGE_KST=2026-06-03T00:00:00.000+09:00 ~ 2026-06-04T00:00:00.000+09:00
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-03] RANGE_UTC=2026-06-02T15:00:00.000+00:00 ~ 2026-06-03T15:00:00.000+00:00
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-03] BATCH_SIZE=5000, SCROLL_TTL=10m
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-03] OUT_JSON=/Users/bryan/Workspace/elasticsearch/watchdog/call_sessions/exports/2026-06-01~2026-06-07/call_sessions_footprints_2026-06-03.json
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-03] call_docs=218, unique_call_sessions=181
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-03] batch=1, processed_docs=1991, sessions=181
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-03] DONE saved -> /Users/bryan/Workspace/elasticsearch/watchdog/call_sessions/exports/2026-06-01~2026-06-07/call_sessions_footprints_2026-06-03.json
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-03] DONE call_sessions=181, footprints_docs=1991
+[2026-06-08 09:00:11] [extract][stdout] 
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-04] START
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-04] TARGET_TYPE=call
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-04] ES_URL=http://localhost:19200
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-04] INDICES=brand-2026-06-*,crime-2026-06-*,civil-2026-06-*,divorce-2026-06-*,assault-2026-06-*,drug-2026-06-*,inherit-2026-06-*,traffic-2026-06-*,school-2026-06-*
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-04] RANGE_KST=2026-06-04T00:00:00.000+09:00 ~ 2026-06-05T00:00:00.000+09:00
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-04] RANGE_UTC=2026-06-03T15:00:00.000+00:00 ~ 2026-06-04T15:00:00.000+00:00
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-04] BATCH_SIZE=5000, SCROLL_TTL=10m
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-04] OUT_JSON=/Users/bryan/Workspace/elasticsearch/watchdog/call_sessions/exports/2026-06-01~2026-06-07/call_sessions_footprints_2026-06-04.json
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-04] call_docs=1723, unique_call_sessions=1244
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-04] batch=1, processed_docs=5220, sessions=1244
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-04] DONE saved -> /Users/bryan/Workspace/elasticsearch/watchdog/call_sessions/exports/2026-06-01~2026-06-07/call_sessions_footprints_2026-06-04.json
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-04] DONE call_sessions=1244, footprints_docs=5220
+[2026-06-08 09:00:11] [extract][stdout] 
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-05] START
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-05] TARGET_TYPE=call
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-05] ES_URL=http://localhost:19200
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-05] INDICES=brand-2026-06-*,crime-2026-06-*,civil-2026-06-*,divorce-2026-06-*,assault-2026-06-*,drug-2026-06-*,inherit-2026-06-*,traffic-2026-06-*,school-2026-06-*
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-05] RANGE_KST=2026-06-05T00:00:00.000+09:00 ~ 2026-06-06T00:00:00.000+09:00
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-05] RANGE_UTC=2026-06-04T15:00:00.000+00:00 ~ 2026-06-05T15:00:00.000+00:00
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-05] BATCH_SIZE=5000, SCROLL_TTL=10m
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-05] OUT_JSON=/Users/bryan/Workspace/elasticsearch/watchdog/call_sessions/exports/2026-06-01~2026-06-07/call_sessions_footprints_2026-06-05.json
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-05] call_docs=1686, unique_call_sessions=1171
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-05] batch=1, processed_docs=4786, sessions=1171
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-05] DONE saved -> /Users/bryan/Workspace/elasticsearch/watchdog/call_sessions/exports/2026-06-01~2026-06-07/call_sessions_footprints_2026-06-05.json
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-05] DONE call_sessions=1171, footprints_docs=4786
+[2026-06-08 09:00:11] [extract][stdout] 
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-06] START
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-06] TARGET_TYPE=call
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-06] ES_URL=http://localhost:19200
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-06] INDICES=brand-2026-06-*,crime-2026-06-*,civil-2026-06-*,divorce-2026-06-*,assault-2026-06-*,drug-2026-06-*,inherit-2026-06-*,traffic-2026-06-*,school-2026-06-*
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-06] RANGE_KST=2026-06-06T00:00:00.000+09:00 ~ 2026-06-07T00:00:00.000+09:00
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-06] RANGE_UTC=2026-06-05T15:00:00.000+00:00 ~ 2026-06-06T15:00:00.000+00:00
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-06] BATCH_SIZE=5000, SCROLL_TTL=10m
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-06] OUT_JSON=/Users/bryan/Workspace/elasticsearch/watchdog/call_sessions/exports/2026-06-01~2026-06-07/call_sessions_footprints_2026-06-06.json
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-06] call_docs=141, unique_call_sessions=119
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-06] batch=1, processed_docs=897, sessions=119
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-06] DONE saved -> /Users/bryan/Workspace/elasticsearch/watchdog/call_sessions/exports/2026-06-01~2026-06-07/call_sessions_footprints_2026-06-06.json
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-06] DONE call_sessions=119, footprints_docs=897
+[2026-06-08 09:00:11] [extract][stdout] 
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-07] START
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-07] TARGET_TYPE=call
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-07] ES_URL=http://localhost:19200
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-07] INDICES=brand-2026-06-*,crime-2026-06-*,civil-2026-06-*,divorce-2026-06-*,assault-2026-06-*,drug-2026-06-*,inherit-2026-06-*,traffic-2026-06-*,school-2026-06-*
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-07] RANGE_KST=2026-06-07T00:00:00.000+09:00 ~ 2026-06-08T00:00:00.000+09:00
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-07] RANGE_UTC=2026-06-06T15:00:00.000+00:00 ~ 2026-06-07T15:00:00.000+00:00
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-07] BATCH_SIZE=5000, SCROLL_TTL=10m
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-07] OUT_JSON=/Users/bryan/Workspace/elasticsearch/watchdog/call_sessions/exports/2026-06-01~2026-06-07/call_sessions_footprints_2026-06-07.json
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-07] call_docs=162, unique_call_sessions=118
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-07] batch=1, processed_docs=810, sessions=118
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-07] DONE saved -> /Users/bryan/Workspace/elasticsearch/watchdog/call_sessions/exports/2026-06-01~2026-06-07/call_sessions_footprints_2026-06-07.json
+[2026-06-08 09:00:11] [extract][stdout] [DAY 2026-06-07] DONE call_sessions=118, footprints_docs=810
+[2026-06-08 09:00:11] Generated JSON: /Users/bryan/Workspace/elasticsearch/watchdog/call_sessions/exports/2026-06-01~2026-06-07/call_sessions_footprints_2026-06-01.json
+[2026-06-08 09:00:11] Generated JSON: /Users/bryan/Workspace/elasticsearch/watchdog/call_sessions/exports/2026-06-01~2026-06-07/call_sessions_footprints_2026-06-02.json
+[2026-06-08 09:00:11] Generated JSON: /Users/bryan/Workspace/elasticsearch/watchdog/call_sessions/exports/2026-06-01~2026-06-07/call_sessions_footprints_2026-06-03.json
+[2026-06-08 09:00:11] Generated JSON: /Users/bryan/Workspace/elasticsearch/watchdog/call_sessions/exports/2026-06-01~2026-06-07/call_sessions_footprints_2026-06-04.json
+[2026-06-08 09:00:11] Generated JSON: /Users/bryan/Workspace/elasticsearch/watchdog/call_sessions/exports/2026-06-01~2026-06-07/call_sessions_footprints_2026-06-05.json
+[2026-06-08 09:00:11] Generated JSON: /Users/bryan/Workspace/elasticsearch/watchdog/call_sessions/exports/2026-06-01~2026-06-07/call_sessions_footprints_2026-06-06.json
+[2026-06-08 09:00:11] Generated JSON: /Users/bryan/Workspace/elasticsearch/watchdog/call_sessions/exports/2026-06-01~2026-06-07/call_sessions_footprints_2026-06-07.json
+[2026-06-08 09:00:11] ZIP created: /Users/bryan/Workspace/elasticsearch/watchdog/call_sessions/exports/call_sessions_footprints_2026-06-01~2026-06-07.zip
+[2026-06-08 09:00:11] Log saved: /Users/bryan/Workspace/elasticsearch/watchdog/call_sessions/logs/call_sessions_footprints_2026-06-01~2026-06-07.log
+[2026-06-08 09:00:13] Slack file upload completed
+[2026-06-08 09:00:13] Job finished successfully
+[2026-06-08 09:00:13] Job started
+[2026-06-08 09:00:13] JOB_NAME=kakao_sessions_footprints
+[2026-06-08 09:00:13] BASE_DIR=/Users/bryan/Workspace/elasticsearch/watchdog/kakao_sessions/workspace
+[2026-06-08 09:00:13] EXTRACT_SCRIPT=/Users/bryan/Workspace/elasticsearch/extract-kakao_sessions-footprints-weekly.py
+[2026-06-08 09:00:13] OUTPUT_ROOT=/Users/bryan/Workspace/elasticsearch/watchdog/kakao_sessions/exports
+[2026-06-08 09:00:13] LOG_DIR=/Users/bryan/Workspace/elasticsearch/watchdog/kakao_sessions/logs
+[2026-06-08 09:00:13] TARGET_WEEK=2026-06-01~2026-06-07
+[2026-06-08 09:00:13] HOSTNAME=Bryanui-MacBookPro.local
+[2026-06-08 09:00:13] sys.executable=/Library/Developer/CommandLineTools/usr/bin/python3
+[2026-06-08 09:00:13] PYTHON_BIN=/usr/bin/python3
+[2026-06-08 09:00:13] Run extract script: /usr/bin/python3 /Users/bryan/Workspace/elasticsearch/extract-kakao_sessions-footprints-weekly.py --start-date 2026-06-01 --end-date 2026-06-07 --out-dir /Users/bryan/Workspace/elasticsearch/watchdog/kakao_sessions/exports/2026-06-01~2026-06-07
+[2026-06-08 09:00:13] Extract cwd: /Users/bryan/Workspace/elasticsearch/watchdog/kakao_sessions/workspace
+[2026-06-08 09:00:13] Python executable for child: /usr/bin/python3
+[2026-06-08 09:00:17] Child stdout log saved: /Users/bryan/Workspace/elasticsearch/watchdog/kakao_sessions/logs/kakao_sessions_footprints_2026-06-01~2026-06-07_extract.stdout.log
+[2026-06-08 09:00:17] Child stderr log saved: /Users/bryan/Workspace/elasticsearch/watchdog/kakao_sessions/logs/kakao_sessions_footprints_2026-06-01~2026-06-07_extract.stderr.log
+[2026-06-08 09:00:17] Child meta log saved: /Users/bryan/Workspace/elasticsearch/watchdog/kakao_sessions/logs/kakao_sessions_footprints_2026-06-01~2026-06-07_extract.meta.log
+[2026-06-08 09:00:17] [extract][stdout] [INFO] OUT_DIR=/Users/bryan/Workspace/elasticsearch/watchdog/kakao_sessions/exports/2026-06-01~2026-06-07
+[2026-06-08 09:00:17] [extract][stdout] [INFO] DATES=2026-06-01, 2026-06-02, 2026-06-03, 2026-06-04, 2026-06-05, 2026-06-06, 2026-06-07
+[2026-06-08 09:00:17] [extract][stdout] 
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-01] START
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-01] ES_URL=http://localhost:19200
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-01] INDICES=brand-2026-05*,crime-2026-05*,civil-2026-05*,divorce-2026-05*,assault-2026-05*,drug-2026-05*,inherit-2026-05*,traffic-2026-05*,school-2026-05*,brand-2026-06*,crime-2026-06*,civil-2026-06*,divorce-2026-06*,assault-2026-06*,drug-2026-06*,inherit-2026-06*,traffic-2026-06*,school-2026-06*
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-01] RANGE_KST=2026-06-01T00:00:00+09:00 ~ 2026-06-02T00:00:00+09:00
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-01] RANGE_UTC=2026-05-31T15:00:00.000Z ~ 2026-06-01T15:00:00.000Z
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-01] BATCH_SIZE=5000, SCROLL_TTL=10m
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-01] OUT_JSON=/Users/bryan/Workspace/elasticsearch/watchdog/kakao_sessions/exports/2026-06-01~2026-06-07/kakao_sessions_footprints_2026-06-01.json
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-01] kakao_docs=682, unique_kakao_sessions=601
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-01] batch=1, processed_docs=2749, sessions=601
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-01] DONE saved -> /Users/bryan/Workspace/elasticsearch/watchdog/kakao_sessions/exports/2026-06-01~2026-06-07/kakao_sessions_footprints_2026-06-01.json
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-01] DONE kakao_sessions=601, footprints_docs=2749
+[2026-06-08 09:00:17] [extract][stdout] 
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-02] START
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-02] ES_URL=http://localhost:19200
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-02] INDICES=brand-2026-06*,crime-2026-06*,civil-2026-06*,divorce-2026-06*,assault-2026-06*,drug-2026-06*,inherit-2026-06*,traffic-2026-06*,school-2026-06*
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-02] RANGE_KST=2026-06-02T00:00:00+09:00 ~ 2026-06-03T00:00:00+09:00
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-02] RANGE_UTC=2026-06-01T15:00:00.000Z ~ 2026-06-02T15:00:00.000Z
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-02] BATCH_SIZE=5000, SCROLL_TTL=10m
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-02] OUT_JSON=/Users/bryan/Workspace/elasticsearch/watchdog/kakao_sessions/exports/2026-06-01~2026-06-07/kakao_sessions_footprints_2026-06-02.json
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-02] kakao_docs=825, unique_kakao_sessions=713
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-02] batch=1, processed_docs=3196, sessions=713
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-02] DONE saved -> /Users/bryan/Workspace/elasticsearch/watchdog/kakao_sessions/exports/2026-06-01~2026-06-07/kakao_sessions_footprints_2026-06-02.json
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-02] DONE kakao_sessions=713, footprints_docs=3196
+[2026-06-08 09:00:17] [extract][stdout] 
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-03] START
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-03] ES_URL=http://localhost:19200
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-03] INDICES=brand-2026-06*,crime-2026-06*,civil-2026-06*,divorce-2026-06*,assault-2026-06*,drug-2026-06*,inherit-2026-06*,traffic-2026-06*,school-2026-06*
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-03] RANGE_KST=2026-06-03T00:00:00+09:00 ~ 2026-06-04T00:00:00+09:00
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-03] RANGE_UTC=2026-06-02T15:00:00.000Z ~ 2026-06-03T15:00:00.000Z
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-03] BATCH_SIZE=5000, SCROLL_TTL=10m
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-03] OUT_JSON=/Users/bryan/Workspace/elasticsearch/watchdog/kakao_sessions/exports/2026-06-01~2026-06-07/kakao_sessions_footprints_2026-06-03.json
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-03] kakao_docs=147, unique_kakao_sessions=134
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-03] batch=1, processed_docs=765, sessions=134
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-03] DONE saved -> /Users/bryan/Workspace/elasticsearch/watchdog/kakao_sessions/exports/2026-06-01~2026-06-07/kakao_sessions_footprints_2026-06-03.json
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-03] DONE kakao_sessions=134, footprints_docs=765
+[2026-06-08 09:00:17] [extract][stdout] 
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-04] START
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-04] ES_URL=http://localhost:19200
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-04] INDICES=brand-2026-06*,crime-2026-06*,civil-2026-06*,divorce-2026-06*,assault-2026-06*,drug-2026-06*,inherit-2026-06*,traffic-2026-06*,school-2026-06*
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-04] RANGE_KST=2026-06-04T00:00:00+09:00 ~ 2026-06-05T00:00:00+09:00
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-04] RANGE_UTC=2026-06-03T15:00:00.000Z ~ 2026-06-04T15:00:00.000Z
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-04] BATCH_SIZE=5000, SCROLL_TTL=10m
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-04] OUT_JSON=/Users/bryan/Workspace/elasticsearch/watchdog/kakao_sessions/exports/2026-06-01~2026-06-07/kakao_sessions_footprints_2026-06-04.json
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-04] kakao_docs=1080, unique_kakao_sessions=921
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-04] batch=1, processed_docs=3761, sessions=921
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-04] DONE saved -> /Users/bryan/Workspace/elasticsearch/watchdog/kakao_sessions/exports/2026-06-01~2026-06-07/kakao_sessions_footprints_2026-06-04.json
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-04] DONE kakao_sessions=921, footprints_docs=3761
+[2026-06-08 09:00:17] [extract][stdout] 
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-05] START
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-05] ES_URL=http://localhost:19200
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-05] INDICES=brand-2026-06*,crime-2026-06*,civil-2026-06*,divorce-2026-06*,assault-2026-06*,drug-2026-06*,inherit-2026-06*,traffic-2026-06*,school-2026-06*
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-05] RANGE_KST=2026-06-05T00:00:00+09:00 ~ 2026-06-06T00:00:00+09:00
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-05] RANGE_UTC=2026-06-04T15:00:00.000Z ~ 2026-06-05T15:00:00.000Z
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-05] BATCH_SIZE=5000, SCROLL_TTL=10m
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-05] OUT_JSON=/Users/bryan/Workspace/elasticsearch/watchdog/kakao_sessions/exports/2026-06-01~2026-06-07/kakao_sessions_footprints_2026-06-05.json
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-05] kakao_docs=830, unique_kakao_sessions=664
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-05] batch=1, processed_docs=3193, sessions=664
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-05] DONE saved -> /Users/bryan/Workspace/elasticsearch/watchdog/kakao_sessions/exports/2026-06-01~2026-06-07/kakao_sessions_footprints_2026-06-05.json
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-05] DONE kakao_sessions=664, footprints_docs=3193
+[2026-06-08 09:00:17] [extract][stdout] 
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-06] START
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-06] ES_URL=http://localhost:19200
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-06] INDICES=brand-2026-06*,crime-2026-06*,civil-2026-06*,divorce-2026-06*,assault-2026-06*,drug-2026-06*,inherit-2026-06*,traffic-2026-06*,school-2026-06*
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-06] RANGE_KST=2026-06-06T00:00:00+09:00 ~ 2026-06-07T00:00:00+09:00
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-06] RANGE_UTC=2026-06-05T15:00:00.000Z ~ 2026-06-06T15:00:00.000Z
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-06] BATCH_SIZE=5000, SCROLL_TTL=10m
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-06] OUT_JSON=/Users/bryan/Workspace/elasticsearch/watchdog/kakao_sessions/exports/2026-06-01~2026-06-07/kakao_sessions_footprints_2026-06-06.json
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-06] kakao_docs=100, unique_kakao_sessions=92
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-06] batch=1, processed_docs=452, sessions=92
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-06] DONE saved -> /Users/bryan/Workspace/elasticsearch/watchdog/kakao_sessions/exports/2026-06-01~2026-06-07/kakao_sessions_footprints_2026-06-06.json
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-06] DONE kakao_sessions=92, footprints_docs=452
+[2026-06-08 09:00:17] [extract][stdout] 
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-07] START
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-07] ES_URL=http://localhost:19200
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-07] INDICES=brand-2026-06*,crime-2026-06*,civil-2026-06*,divorce-2026-06*,assault-2026-06*,drug-2026-06*,inherit-2026-06*,traffic-2026-06*,school-2026-06*
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-07] RANGE_KST=2026-06-07T00:00:00+09:00 ~ 2026-06-08T00:00:00+09:00
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-07] RANGE_UTC=2026-06-06T15:00:00.000Z ~ 2026-06-07T15:00:00.000Z
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-07] BATCH_SIZE=5000, SCROLL_TTL=10m
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-07] OUT_JSON=/Users/bryan/Workspace/elasticsearch/watchdog/kakao_sessions/exports/2026-06-01~2026-06-07/kakao_sessions_footprints_2026-06-07.json
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-07] kakao_docs=117, unique_kakao_sessions=108
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-07] batch=1, processed_docs=581, sessions=108
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-07] DONE saved -> /Users/bryan/Workspace/elasticsearch/watchdog/kakao_sessions/exports/2026-06-01~2026-06-07/kakao_sessions_footprints_2026-06-07.json
+[2026-06-08 09:00:17] [extract][stdout] [DAY 2026-06-07] DONE kakao_sessions=108, footprints_docs=581
+[2026-06-08 09:00:17] Generated JSON: /Users/bryan/Workspace/elasticsearch/watchdog/kakao_sessions/exports/2026-06-01~2026-06-07/kakao_sessions_footprints_2026-06-01.json
+[2026-06-08 09:00:17] Generated JSON: /Users/bryan/Workspace/elasticsearch/watchdog/kakao_sessions/exports/2026-06-01~2026-06-07/kakao_sessions_footprints_2026-06-02.json
+[2026-06-08 09:00:17] Generated JSON: /Users/bryan/Workspace/elasticsearch/watchdog/kakao_sessions/exports/2026-06-01~2026-06-07/kakao_sessions_footprints_2026-06-03.json
+[2026-06-08 09:00:17] Generated JSON: /Users/bryan/Workspace/elasticsearch/watchdog/kakao_sessions/exports/2026-06-01~2026-06-07/kakao_sessions_footprints_2026-06-04.json
+[2026-06-08 09:00:17] Generated JSON: /Users/bryan/Workspace/elasticsearch/watchdog/kakao_sessions/exports/2026-06-01~2026-06-07/kakao_sessions_footprints_2026-06-05.json
+[2026-06-08 09:00:17] Generated JSON: /Users/bryan/Workspace/elasticsearch/watchdog/kakao_sessions/exports/2026-06-01~2026-06-07/kakao_sessions_footprints_2026-06-06.json
+[2026-06-08 09:00:17] Generated JSON: /Users/bryan/Workspace/elasticsearch/watchdog/kakao_sessions/exports/2026-06-01~2026-06-07/kakao_sessions_footprints_2026-06-07.json
+[2026-06-08 09:00:17] ZIP created: /Users/bryan/Workspace/elasticsearch/watchdog/kakao_sessions/exports/kakao_sessions_footprints_2026-06-01~2026-06-07.zip
+[2026-06-08 09:00:17] Log will be saved to: /Users/bryan/Workspace/elasticsearch/watchdog/kakao_sessions/logs/kakao_sessions_footprints_2026-06-01~2026-06-07.log
+[2026-06-08 09:00:19] Slack file upload completed
+[2026-06-08 09:00:20] Job finished successfully
+[2026-06-08 09:00:20] Job started
+[2026-06-08 09:00:20] BASE_DIR=/Users/bryan/Workspace/elasticsearch/watchdog/viral/workspace
+[2026-06-08 09:00:20] EXTRACT_SCRIPT=/Users/bryan/Workspace/elasticsearch/extract-viral_marketing.py
+[2026-06-08 09:00:20] OUTPUT_ROOT=/Users/bryan/Workspace/elasticsearch/watchdog/viral/exports
+[2026-06-08 09:00:20] LOG_DIR=/Users/bryan/Workspace/elasticsearch/watchdog/viral/logs
+[2026-06-08 09:00:20] CHECKPOINT_DIR=/Users/bryan/Workspace/elasticsearch/watchdog/viral/checkpoint
+[2026-06-08 09:00:20] TARGET_WEEK=2026-06-01~2026-06-07
+[2026-06-08 09:00:20] HOSTNAME=Bryanui-MacBookPro.local
+[2026-06-08 09:00:20] Run extract script: /Users/bryan/Workspace/elasticsearch/.venv/bin/python /Users/bryan/Workspace/elasticsearch/extract-viral_marketing.py --start-date 2026-06-01 --end-date 2026-06-07 --out-dir /Users/bryan/Workspace/elasticsearch/watchdog/viral/exports --checkpoint-dir /Users/bryan/Workspace/elasticsearch/watchdog/viral/checkpoint --out-prefix viral_marketing_logs --zip-name viral_marketing_logs_2026-06-01~2026-06-07.zip
+[2026-06-08 09:00:22] [extract][stdout] [INFO] ES_URL=http://localhost:19200
+[2026-06-08 09:00:22] [extract][stdout] [INFO] BATCH_SIZE=2000, SLEEP_SEC=0.0
+[2026-06-08 09:00:22] [extract][stdout] [INFO] START_DATE(KST)=2026-06-01
+[2026-06-08 09:00:22] [extract][stdout] [INFO] END_DATE(KST)=2026-06-07
+[2026-06-08 09:00:22] [extract][stdout] [INFO] OUT_DIR=/Users/bryan/Workspace/elasticsearch/watchdog/viral/exports
+[2026-06-08 09:00:22] [extract][stdout] [INFO] CHECKPOINT_DIR=/Users/bryan/Workspace/elasticsearch/watchdog/viral/checkpoint
+[2026-06-08 09:00:22] [extract][stdout] [INFO] OUT_PREFIX=viral_marketing_logs
+[2026-06-08 09:00:22] [extract][stdout] [INFO] ZIP_PATH=/Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-06-01~2026-06-07.zip
+[2026-06-08 09:00:22] [extract][stdout] ================================================================================
+[2026-06-08 09:00:22] [extract][stdout] [INFO] KST_DAY=2026-06-01
+[2026-06-08 09:00:22] [extract][stdout] [INFO] KST_RANGE=2026-06-01T00:00:00+09:00 ~ 2026-06-02T00:00:00+09:00
+[2026-06-08 09:00:22] [extract][stdout] [INFO] UTC_RANGE=2026-05-31T15:00:00.000Z ~ 2026-06-01T15:00:00.000Z
+[2026-06-08 09:00:22] [extract][stdout] [INFO] INDEX=brand-2026-05*,crime-2026-05*,civil-2026-05*,divorce-2026-05*,assault-2026-05*,drug-2026-05*,inherit-2026-05*,traffic-2026-05*,school-2026-05*,brand-2026-06*,crime-2026-06*,civil-2026-06*,divorce-2026-06*,assault-2026-06*,drug-2026-06*,inherit-2026-06*,traffic-2026-06*,school-2026-06*
+[2026-06-08 09:00:22] [extract][stdout] [INFO] NDJSON_FILE=/Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-06-01.ndjson
+[2026-06-08 09:00:22] [extract][stdout] [INFO] XLSX_FILE=/Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-06-01.xlsx
+[2026-06-08 09:00:22] [extract][stdout] [INFO] CHECKPOINT=/Users/bryan/Workspace/elasticsearch/watchdog/viral/checkpoint/checkpoint_2026-06-01.json
+[2026-06-08 09:00:22] [extract][stdout] [INFO] 2026-06-01 batch ok. total saved=194
+[2026-06-08 09:00:22] [extract][stdout] [DONE] 2026-06-01 no more hits
+[2026-06-08 09:00:22] [extract][stdout] [INFO] removed checkpoint: /Users/bryan/Workspace/elasticsearch/watchdog/viral/checkpoint/checkpoint_2026-06-01.json
+[2026-06-08 09:00:22] [extract][stdout] [INFO] converting NDJSON -> XLSX: /Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-06-01.ndjson -> /Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-06-01.xlsx
+[2026-06-08 09:00:22] [extract][stdout] [INFO] removed ndjson after xlsx conversion: /Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-06-01.ndjson
+[2026-06-08 09:00:22] [extract][stdout] [FINISH] 2026-06-01 saved=194, xlsx=/Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-06-01.xlsx
+[2026-06-08 09:00:22] [extract][stdout] ================================================================================
+[2026-06-08 09:00:22] [extract][stdout] [INFO] KST_DAY=2026-06-02
+[2026-06-08 09:00:22] [extract][stdout] [INFO] KST_RANGE=2026-06-02T00:00:00+09:00 ~ 2026-06-03T00:00:00+09:00
+[2026-06-08 09:00:22] [extract][stdout] [INFO] UTC_RANGE=2026-06-01T15:00:00.000Z ~ 2026-06-02T15:00:00.000Z
+[2026-06-08 09:00:22] [extract][stdout] [INFO] INDEX=brand-2026-06*,crime-2026-06*,civil-2026-06*,divorce-2026-06*,assault-2026-06*,drug-2026-06*,inherit-2026-06*,traffic-2026-06*,school-2026-06*
+[2026-06-08 09:00:22] [extract][stdout] [INFO] NDJSON_FILE=/Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-06-02.ndjson
+[2026-06-08 09:00:22] [extract][stdout] [INFO] XLSX_FILE=/Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-06-02.xlsx
+[2026-06-08 09:00:22] [extract][stdout] [INFO] CHECKPOINT=/Users/bryan/Workspace/elasticsearch/watchdog/viral/checkpoint/checkpoint_2026-06-02.json
+[2026-06-08 09:00:22] [extract][stdout] [INFO] 2026-06-02 batch ok. total saved=180
+[2026-06-08 09:00:22] [extract][stdout] [DONE] 2026-06-02 no more hits
+[2026-06-08 09:00:22] [extract][stdout] [INFO] removed checkpoint: /Users/bryan/Workspace/elasticsearch/watchdog/viral/checkpoint/checkpoint_2026-06-02.json
+[2026-06-08 09:00:22] [extract][stdout] [INFO] converting NDJSON -> XLSX: /Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-06-02.ndjson -> /Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-06-02.xlsx
+[2026-06-08 09:00:22] [extract][stdout] [INFO] removed ndjson after xlsx conversion: /Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-06-02.ndjson
+[2026-06-08 09:00:22] [extract][stdout] [FINISH] 2026-06-02 saved=180, xlsx=/Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-06-02.xlsx
+[2026-06-08 09:00:22] [extract][stdout] ================================================================================
+[2026-06-08 09:00:22] [extract][stdout] [INFO] KST_DAY=2026-06-03
+[2026-06-08 09:00:22] [extract][stdout] [INFO] KST_RANGE=2026-06-03T00:00:00+09:00 ~ 2026-06-04T00:00:00+09:00
+[2026-06-08 09:00:22] [extract][stdout] [INFO] UTC_RANGE=2026-06-02T15:00:00.000Z ~ 2026-06-03T15:00:00.000Z
+[2026-06-08 09:00:22] [extract][stdout] [INFO] INDEX=brand-2026-06*,crime-2026-06*,civil-2026-06*,divorce-2026-06*,assault-2026-06*,drug-2026-06*,inherit-2026-06*,traffic-2026-06*,school-2026-06*
+[2026-06-08 09:00:22] [extract][stdout] [INFO] NDJSON_FILE=/Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-06-03.ndjson
+[2026-06-08 09:00:22] [extract][stdout] [INFO] XLSX_FILE=/Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-06-03.xlsx
+[2026-06-08 09:00:22] [extract][stdout] [INFO] CHECKPOINT=/Users/bryan/Workspace/elasticsearch/watchdog/viral/checkpoint/checkpoint_2026-06-03.json
+[2026-06-08 09:00:22] [extract][stdout] [INFO] 2026-06-03 batch ok. total saved=121
+[2026-06-08 09:00:22] [extract][stdout] [DONE] 2026-06-03 no more hits
+[2026-06-08 09:00:22] [extract][stdout] [INFO] removed checkpoint: /Users/bryan/Workspace/elasticsearch/watchdog/viral/checkpoint/checkpoint_2026-06-03.json
+[2026-06-08 09:00:22] [extract][stdout] [INFO] converting NDJSON -> XLSX: /Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-06-03.ndjson -> /Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-06-03.xlsx
+[2026-06-08 09:00:22] [extract][stdout] [INFO] removed ndjson after xlsx conversion: /Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-06-03.ndjson
+[2026-06-08 09:00:22] [extract][stdout] [FINISH] 2026-06-03 saved=121, xlsx=/Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-06-03.xlsx
+[2026-06-08 09:00:22] [extract][stdout] ================================================================================
+[2026-06-08 09:00:22] [extract][stdout] [INFO] KST_DAY=2026-06-04
+[2026-06-08 09:00:22] [extract][stdout] [INFO] KST_RANGE=2026-06-04T00:00:00+09:00 ~ 2026-06-05T00:00:00+09:00
+[2026-06-08 09:00:22] [extract][stdout] [INFO] UTC_RANGE=2026-06-03T15:00:00.000Z ~ 2026-06-04T15:00:00.000Z
+[2026-06-08 09:00:22] [extract][stdout] [INFO] INDEX=brand-2026-06*,crime-2026-06*,civil-2026-06*,divorce-2026-06*,assault-2026-06*,drug-2026-06*,inherit-2026-06*,traffic-2026-06*,school-2026-06*
+[2026-06-08 09:00:22] [extract][stdout] [INFO] NDJSON_FILE=/Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-06-04.ndjson
+[2026-06-08 09:00:22] [extract][stdout] [INFO] XLSX_FILE=/Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-06-04.xlsx
+[2026-06-08 09:00:22] [extract][stdout] [INFO] CHECKPOINT=/Users/bryan/Workspace/elasticsearch/watchdog/viral/checkpoint/checkpoint_2026-06-04.json
+[2026-06-08 09:00:22] [extract][stdout] [INFO] 2026-06-04 batch ok. total saved=231
+[2026-06-08 09:00:22] [extract][stdout] [INFO] 2026-06-04 batch ok. total saved=232
+[2026-06-08 09:00:22] [extract][stdout] [DONE] 2026-06-04 no more hits
+[2026-06-08 09:00:22] [extract][stdout] [INFO] removed checkpoint: /Users/bryan/Workspace/elasticsearch/watchdog/viral/checkpoint/checkpoint_2026-06-04.json
+[2026-06-08 09:00:22] [extract][stdout] [INFO] converting NDJSON -> XLSX: /Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-06-04.ndjson -> /Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-06-04.xlsx
+[2026-06-08 09:00:22] [extract][stdout] [INFO] removed ndjson after xlsx conversion: /Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-06-04.ndjson
+[2026-06-08 09:00:22] [extract][stdout] [FINISH] 2026-06-04 saved=232, xlsx=/Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-06-04.xlsx
+[2026-06-08 09:00:22] [extract][stdout] ================================================================================
+[2026-06-08 09:00:22] [extract][stdout] [INFO] KST_DAY=2026-06-05
+[2026-06-08 09:00:22] [extract][stdout] [INFO] KST_RANGE=2026-06-05T00:00:00+09:00 ~ 2026-06-06T00:00:00+09:00
+[2026-06-08 09:00:22] [extract][stdout] [INFO] UTC_RANGE=2026-06-04T15:00:00.000Z ~ 2026-06-05T15:00:00.000Z
+[2026-06-08 09:00:22] [extract][stdout] [INFO] INDEX=brand-2026-06*,crime-2026-06*,civil-2026-06*,divorce-2026-06*,assault-2026-06*,drug-2026-06*,inherit-2026-06*,traffic-2026-06*,school-2026-06*
+[2026-06-08 09:00:22] [extract][stdout] [INFO] NDJSON_FILE=/Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-06-05.ndjson
+[2026-06-08 09:00:22] [extract][stdout] [INFO] XLSX_FILE=/Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-06-05.xlsx
+[2026-06-08 09:00:22] [extract][stdout] [INFO] CHECKPOINT=/Users/bryan/Workspace/elasticsearch/watchdog/viral/checkpoint/checkpoint_2026-06-05.json
+[2026-06-08 09:00:22] [extract][stdout] [INFO] 2026-06-05 batch ok. total saved=154
+[2026-06-08 09:00:22] [extract][stdout] [DONE] 2026-06-05 no more hits
+[2026-06-08 09:00:22] [extract][stdout] [INFO] removed checkpoint: /Users/bryan/Workspace/elasticsearch/watchdog/viral/checkpoint/checkpoint_2026-06-05.json
+[2026-06-08 09:00:22] [extract][stdout] [INFO] converting NDJSON -> XLSX: /Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-06-05.ndjson -> /Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-06-05.xlsx
+[2026-06-08 09:00:22] [extract][stdout] [INFO] removed ndjson after xlsx conversion: /Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-06-05.ndjson
+[2026-06-08 09:00:22] [extract][stdout] [FINISH] 2026-06-05 saved=154, xlsx=/Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-06-05.xlsx
+[2026-06-08 09:00:22] [extract][stdout] ================================================================================
+[2026-06-08 09:00:22] [extract][stdout] [INFO] KST_DAY=2026-06-06
+[2026-06-08 09:00:22] [extract][stdout] [INFO] KST_RANGE=2026-06-06T00:00:00+09:00 ~ 2026-06-07T00:00:00+09:00
+[2026-06-08 09:00:22] [extract][stdout] [INFO] UTC_RANGE=2026-06-05T15:00:00.000Z ~ 2026-06-06T15:00:00.000Z
+[2026-06-08 09:00:22] [extract][stdout] [INFO] INDEX=brand-2026-06*,crime-2026-06*,civil-2026-06*,divorce-2026-06*,assault-2026-06*,drug-2026-06*,inherit-2026-06*,traffic-2026-06*,school-2026-06*
+[2026-06-08 09:00:22] [extract][stdout] [INFO] NDJSON_FILE=/Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-06-06.ndjson
+[2026-06-08 09:00:22] [extract][stdout] [INFO] XLSX_FILE=/Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-06-06.xlsx
+[2026-06-08 09:00:22] [extract][stdout] [INFO] CHECKPOINT=/Users/bryan/Workspace/elasticsearch/watchdog/viral/checkpoint/checkpoint_2026-06-06.json
+[2026-06-08 09:00:22] [extract][stdout] [INFO] 2026-06-06 batch ok. total saved=137
+[2026-06-08 09:00:22] [extract][stdout] [DONE] 2026-06-06 no more hits
+[2026-06-08 09:00:22] [extract][stdout] [INFO] removed checkpoint: /Users/bryan/Workspace/elasticsearch/watchdog/viral/checkpoint/checkpoint_2026-06-06.json
+[2026-06-08 09:00:22] [extract][stdout] [INFO] converting NDJSON -> XLSX: /Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-06-06.ndjson -> /Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-06-06.xlsx
+[2026-06-08 09:00:22] [extract][stdout] [INFO] removed ndjson after xlsx conversion: /Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-06-06.ndjson
+[2026-06-08 09:00:22] [extract][stdout] [FINISH] 2026-06-06 saved=137, xlsx=/Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-06-06.xlsx
+[2026-06-08 09:00:22] [extract][stdout] ================================================================================
+[2026-06-08 09:00:22] [extract][stdout] [INFO] KST_DAY=2026-06-07
+[2026-06-08 09:00:22] [extract][stdout] [INFO] KST_RANGE=2026-06-07T00:00:00+09:00 ~ 2026-06-08T00:00:00+09:00
+[2026-06-08 09:00:22] [extract][stdout] [INFO] UTC_RANGE=2026-06-06T15:00:00.000Z ~ 2026-06-07T15:00:00.000Z
+[2026-06-08 09:00:22] [extract][stdout] [INFO] INDEX=brand-2026-06*,crime-2026-06*,civil-2026-06*,divorce-2026-06*,assault-2026-06*,drug-2026-06*,inherit-2026-06*,traffic-2026-06*,school-2026-06*
+[2026-06-08 09:00:22] [extract][stdout] [INFO] NDJSON_FILE=/Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-06-07.ndjson
+[2026-06-08 09:00:22] [extract][stdout] [INFO] XLSX_FILE=/Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-06-07.xlsx
+[2026-06-08 09:00:22] [extract][stdout] [INFO] CHECKPOINT=/Users/bryan/Workspace/elasticsearch/watchdog/viral/checkpoint/checkpoint_2026-06-07.json
+[2026-06-08 09:00:22] [extract][stdout] [INFO] 2026-06-07 batch ok. total saved=126
+[2026-06-08 09:00:22] [extract][stdout] [DONE] 2026-06-07 no more hits
+[2026-06-08 09:00:22] [extract][stdout] [INFO] removed checkpoint: /Users/bryan/Workspace/elasticsearch/watchdog/viral/checkpoint/checkpoint_2026-06-07.json
+[2026-06-08 09:00:22] [extract][stdout] [INFO] converting NDJSON -> XLSX: /Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-06-07.ndjson -> /Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-06-07.xlsx
+[2026-06-08 09:00:22] [extract][stdout] [INFO] removed ndjson after xlsx conversion: /Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-06-07.ndjson
+[2026-06-08 09:00:22] [extract][stdout] [FINISH] 2026-06-07 saved=126, xlsx=/Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-06-07.xlsx
+[2026-06-08 09:00:22] [extract][stdout] [INFO] creating zip: /Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-06-01~2026-06-07.zip
+[2026-06-08 09:00:22] [extract][stdout] [INFO] zip created: /Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-06-01~2026-06-07.zip
+[2026-06-08 09:00:22] [extract][stdout] [INFO] removed xlsx after zip creation: /Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-06-01.xlsx
+[2026-06-08 09:00:22] [extract][stdout] [INFO] removed xlsx after zip creation: /Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-06-02.xlsx
+[2026-06-08 09:00:22] [extract][stdout] [INFO] removed xlsx after zip creation: /Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-06-03.xlsx
+[2026-06-08 09:00:22] [extract][stdout] [INFO] removed xlsx after zip creation: /Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-06-04.xlsx
+[2026-06-08 09:00:22] [extract][stdout] [INFO] removed xlsx after zip creation: /Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-06-05.xlsx
+[2026-06-08 09:00:22] [extract][stdout] [INFO] removed xlsx after zip creation: /Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-06-06.xlsx
+[2026-06-08 09:00:22] [extract][stdout] [INFO] removed xlsx after zip creation: /Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-06-07.xlsx
+[2026-06-08 09:00:22] [extract][stdout] [FINISH] zip created and temporary xlsx files removed: /Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-06-01~2026-06-07.zip
+[2026-06-08 09:00:22] ZIP created: /Users/bryan/Workspace/elasticsearch/watchdog/viral/exports/viral_marketing_logs_2026-06-01~2026-06-07.zip
+[2026-06-08 09:00:22] Prepare Slack upload: viral_marketing_logs_2026-06-01~2026-06-07.zip (183131 bytes)
+[2026-06-08 09:00:24] Slack file upload completed
+[2026-06-08 09:00:24] Log saved: /Users/bryan/Workspace/elasticsearch/watchdog/viral/logs/viral_marketing_logs_2026-06-01~2026-06-07.log
+[2026-06-08 09:00:24] Elapsed seconds: 3
+[2026-06-08 09:00:24] Job finished successfully
